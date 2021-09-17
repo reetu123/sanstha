@@ -1,0 +1,165 @@
+//
+// Accordion
+// ======================================================
+.accordion-wrap {
+    border: 1px solid @color__tabs-background;
+    margin-bottom: 21px;
+    padding: 15px 15px 20px;
+    h3.head {
+        font-size: 18px;
+        font-weight: 900;
+        margin-bottom: 10px
+    }
+}
+
+.accordionjs {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1;
+    .acc_section {
+        border: 1px solid @color__tabs-background;
+        position: relative;
+        z-index: 10;
+        margin-top: -1px;
+        overflow: hidden;
+        margin-bottom: 5px;
+        .acc_head {
+            position: relative;
+            padding: 9px 10px 9px 25px;
+            font-family: @heading__font-family;
+            background: @color__tabs-background;
+            display: block;
+            cursor: pointer;
+            font-size: 15px;
+            h3 {
+                line-height: 1;
+                margin: 5px 0;
+            }
+            .icon-accordion {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 11px;
+                    top: 17px;
+                    border-top: 4px solid transparent;
+                    border-bottom: 4px solid transparent;
+                    border-left: 4px solid @text-color__base;
+                }
+            }
+        }
+        &.acc_active .icon-accordion {
+            &:before {
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-top: 4px solid @text-color__base;
+            }
+        }
+    }
+}
+
+.accordionjs .acc_section {
+    .acc_content {
+        padding: 10px;
+        display: none
+    }
+    &:first-of-type,
+    &:first-of-type .acc_head {
+        //        border-top-left-radius: 3px;
+        //        border-top-right-radius: 3px;
+    }
+    &:last-of-type,
+    &:last-of-type .acc_content {
+        //        border-bottom-left-radius: 3px;
+        //        border-bottom-right-radius: 3px;
+    }
+}
+
+.accordionjs .acc_section.acc_active>.acc_content {
+    display: block;
+}
+
+.accordionjs .acc_section.acc_active>.acc_head {
+    background: @color__tabs-background;
+}
+
+//
+// Mobile 
+// ======================================================
+@media only screen and (max-width:(@screen-xs - 1)) {
+    .accordion-with-showcase {
+        .km-accordion {
+            margin-bottom: 20px
+        }
+        .sidebanner {
+            float: none;
+            width: 100%;
+            max-width: 310px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (min-width:@screen-xs) {
+    .accordion-with-showcase {
+        .km-accordion {
+            width: 60%;
+            float: left;
+            padding-right: 11px;
+        }
+        .sidebanner {
+            width: 40%;
+            float: right
+        }
+    }
+}
+
+@media only screen and (min-width:@screen-md) {
+    .accordion-wrap {
+        padding: 15px 20px 20px;
+        h3.head {
+            font-size: 21px
+        }
+    }
+}
+
+//
+// Desktop 
+// ======================================================
+@media only screen and (min-width:@screen-lg) {
+    .accordion-wrap {
+        padding: 24px 20px 28px;
+        .accordionjs .acc_section {
+            .acc_head {
+                font-size: 17px;
+                padding: 11px 10px 11px 35px;
+                .icon-accordion {
+                    &:before {
+                        left: 18px;
+                        top: 19px
+                    }
+                }
+            }
+            .acc_content {
+                padding: 20px;
+                p {
+                    line-height: 1.7
+                }
+                .button {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+    .accordion-with-showcase {
+        .km-accordion {
+            width: 61.2%;
+            float: left
+        }
+        .sidebanner {
+            width: 38.8%;
+            float: right
+        }
+    }
+}

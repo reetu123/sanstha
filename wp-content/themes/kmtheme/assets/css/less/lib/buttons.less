@@ -1,0 +1,53 @@
+//
+// Buttons and Links
+// ======================================================
+
+
+a {
+	color: @primary__text-color;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	color: @primary--theme__color;
+	outline: 0
+}
+
+// buttons 
+
+.button {
+    padding: @primary__button--padding-top-bottom @primary__button--padding-left-right;
+    color: @primary__button--textcolor;
+    background: @primary__button--background;
+    text-transform: uppercase;
+    font-family:@primary__button--font--family;
+    .border--radius(4px);
+    display: inline-block;
+    &:hover {
+        background:@primary__button--hoverbackground;
+        color:@primary__button--hovertextcolor;
+    }
+    &.primary-button {
+        background: @primary__button--background;
+    }
+    &.secondary-button {
+        background: @secondary__button--background
+    }
+}
+
+/* Fixes linked images */
+.entry-content a img,
+.widget a img {
+	-webkit-box-shadow: 0 0 0 8px #fff;
+	box-shadow: 0 0 0 8px #fff;
+}
+
+.post-navigation a:focus .icon,
+.post-navigation a:hover .icon {
+	color: @primary__text-color;
+}

@@ -1,0 +1,71 @@
+//
+//  404 page
+// ======================================================
+
+.error404 .page-content {
+	padding-bottom: 4em;
+}
+
+.error404 .page-content .search-form,
+.search .page-content .search-form {
+	margin-bottom: 3em;
+}
+
+.error404 .error-404{
+	padding-top: 50px;
+}
+
+.error404{
+	.single-featured-image-header + .entry-header{
+		display: none;
+	}
+	.error-404{
+		.page-header{
+			float: none!important;
+			width: 100%!important;
+			display: block;
+			padding-bottom: 30px;
+			text-align: center;
+		}
+		.error-msg{
+			text-align: center;
+			padding-top:10px;
+			padding-bottom:15px;
+			font-weight: @font-weight__bold;
+			font-size: @font-size__h2;
+			img{
+				margin: auto;
+			}
+		}
+		.page-content{
+			text-align: center;
+			.or{
+				font-weight: 600;
+				font-size: @font-size__base;
+			}
+			.search-form{
+				margin-bottom: 1em !important;
+				max-width: 50%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.error404{
+		.error-404{
+			padding-top: @trim;
+			.error-msg{
+				font-size: 28px;
+			}
+			.page-content{
+				.search-form{
+					max-width: 100%;
+					margin-bottom: 0 !important;
+				}
+			}
+		}
+	}
+}

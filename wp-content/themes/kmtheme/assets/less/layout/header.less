@@ -1,0 +1,603 @@
+//
+// Header
+// ======================================================
+
+#top-sidebar-add {
+    padding: 6px 15px;
+}
+#masthead {
+    .wrap {
+        position: relative;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        .transition(all ease 0.3s);
+        @media only screen and (max-width:1099px){
+            padding-top: @box-spacing;
+            padding-bottom: @box-spacing;
+        }
+    }
+}
+.admin-bar {
+    .site-header{
+        top: 32px;
+    }
+}
+.site-header {
+    position: fixed;
+    background-color: @color__white;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1002;
+    box-shadow:0 1px 2px rgba(0,0,0,0.05);
+
+    .topbar-msgbar {
+        background: @color__white;
+        text-align: right;
+        color: @secondary--theme_color;
+        padding-top: 0;
+        position: relative;
+        border-bottom: 1px solid @color__gray-lt;
+        .widget {
+            padding-bottom: 0;
+            p {
+                margin-bottom: 0;
+                font-size: @font-size__sm;
+                color: @color__white;
+                a{
+                    color: @color__white;
+                    &:hover{color: @primary--theme__color;}
+                }
+            }
+        }
+        .icon-top-toggle {
+            display: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 28px;
+            height: 12px;
+            float: right;
+            .border--radius(0 0 4px 4px);
+            .icons-sprite;
+            background-color: @primary--theme__color;
+            background-position: -17px -154px;
+            z-index: 103;
+            cursor: pointer;
+            &.inactive {background-position: -52px -154px;}
+        }
+        .top-right{
+            ul, .top-calltoaction{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .top-calltoaction{
+                .button{
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    margin-left: 5px;
+                }
+            }
+            ul{
+                li{
+                    display: inline-block;
+                    a, i{
+                        font-size: @font-size__lg;
+                        padding: 0 6px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    &.site-header-fixed{
+        box-shadow:0 2px 3px rgba(0,0,0,0.2);
+        .wrap{
+            padding-top: 5px !important;
+            padding-bottom: 5px !important;
+        }
+        .head-right-wrap{
+            padding-top: 2px;
+            @media only screen and (max-width: 767px){
+                padding-top: 1px;
+            }
+        }
+        .header-search-form{
+            padding-top: 2px;
+            @media only screen and (max-width: 1099px){
+                padding-top: @element-spacing;
+            }
+        }
+        .topbar-msgbar{
+            .wrap{
+                display: none;
+            }
+        }
+        .site-branding{
+            .custom-logo-link{
+                img{
+                    max-width: 180px;
+                    @media only screen and (max-width:767px){
+                        max-width: 140px;
+                    }
+                }
+            }
+        }
+        .wsmenu{
+            padding-top: 15px;
+            @media only screen and (max-width:1099px){
+                padding-top: 13px;
+            }
+        }
+        .wsmobileheader{
+            @media only screen and (max-width:@screen-lg){
+                top: 18px;
+            }
+            @media only screen and (max-width:767px){
+                top: 16px;
+            }
+        }
+        .search-toggle-wrapper{
+            &.mobile-active{
+                top: 65px;
+                @media only screen and (max-width:767px){
+                    top: 62px;
+                }
+            }
+        }
+        .my_Account_nav{
+            .my_Account_subnav{
+                top: 62px;
+                @media only screen and (max-width:767px){
+                    top: 54px;
+                }
+            }
+        }
+    }
+}
+
+/* Site branding */
+
+.site-branding {
+    padding: 5px 0 5px;
+    position: relative;
+    -webkit-transition: margin-bottom 0.2s;
+    transition: margin-bottom 0.2s;
+    z-index: 3;
+    max-width: 100%;
+    float: left;
+    a {
+        text-decoration: none;
+        -webkit-transition: opacity 0.2s;
+        transition: opacity 0.2s;
+        &:hover,
+        &:focus {
+            opacity: 0.7;
+        }
+    }
+    .custom-logo-link{
+        line-height: 1;
+        img{
+            max-width: 245px;
+        }
+        @media only screen and (max-width:1099px){
+            padding-right: 1em;
+            img{
+                max-width: 190px;
+            }
+        }
+        @media only screen and (max-width:767px){
+            padding-right: .5em;
+            img{
+                max-width: 150px;
+            }
+        }
+    }
+    @media only screen and (max-width:767px){
+        padding-top: 8px;
+    }
+}
+
+.site-title {
+    clear: none;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: #222;
+    opacity: 1;
+    a {
+        color: #222;
+        opacity: 1;
+    }
+}
+
+// if body has image or video (on homepage)
+body.has-header-image .site-title,
+body.has-header-video .site-title,
+body.has-header-image .site-title a,
+body.has-header-video .site-title a {
+    color: #fff;
+}
+
+.site-description {
+    color: #666;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    margin-bottom: 0;
+}
+
+body.has-header-image .site-description,
+body.has-header-video .site-description {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.custom-logo-link {
+    display: inline-block;
+    padding-right: 1em;
+    vertical-align: middle;
+    width: auto;
+}
+
+.custom-logo-link img {
+    display: inline-block;
+    width: auto;
+    .transition(all ease 0.3s);
+}
+
+body.home.title-tagline-hidden.has-header-image .custom-logo-link img,
+body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.custom-logo-link a:hover,
+.custom-logo-link a:focus {
+    opacity: 0.9;
+}
+
+body:not(.title-tagline-hidden) .site-branding-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.custom-header {
+    position: relative;
+    margin-bottom: 0 !important;
+}
+
+.has-header-image.kmtheme-front-page .custom-header,
+.has-header-video.kmtheme-front-page .custom-header,
+.has-header-image.home.blog .custom-header,
+.has-header-video.home.blog .custom-header {
+    display: table;
+    height: 300px;
+    height: 75vh;
+    width: 100%;
+}
+
+.custom-header-media {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.custom-header-media:before {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.3+75 */
+    background: -moz-linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00000000", endColorstr="#4d000000", GradientType=0);
+    /* IE6-9 */
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.has-header-image .custom-header-media img,
+.has-header-video .custom-header-media video,
+.has-header-video .custom-header-media iframe {
+    position: fixed;
+    height: auto;
+    left: 50%;
+    max-width: 1000%;
+    min-height: 100%;
+    min-width: 100%;
+    min-width: 100vw;
+    /* vw prevents 1px gap on left that 100% has */
+    width: auto;
+    top: 50%;
+    padding-bottom: 1px;
+    /* Prevent header from extending beyond the footer */
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.wp-custom-header .wp-custom-header-video-button {
+    /* Specificity prevents .color-dark button overrides */
+    background-color: rgba(34, 34, 34, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    height: 45px;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+    width: 45px;
+}
+
+.wp-custom-header .wp-custom-header-video-button:hover,
+.wp-custom-header .wp-custom-header-video-button:focus {
+    /* Specificity prevents .color-dark button overrides */
+    border-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(34, 34, 34, 0.8);
+    color: #fff;
+}
+
+.admin-bar .wp-custom-header-video-button {
+    top: 62px;
+}
+
+.has-header-image:not(.kmtheme-front-page):not(.home) .custom-header-media img {
+    bottom: 0;
+    position: absolute;
+    top: auto;
+    -ms-transform: translateX(-50%) translateY(0);
+    -moz-transform: translateX(-50%) translateY(0);
+    -webkit-transform: translateX(-50%) translateY(0);
+    transform: translateX(-50%) translateY(0);
+}
+
+
+/* For browsers that support 'object-fit' */
+
+@supports ( object-fit: cover) {
+    .has-header-image .custom-header-media img,
+    .has-header-video .custom-header-media video,
+    .has-header-video .custom-header-media iframe,
+    .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
+        height: 100%;
+        left: 0;
+        -o-object-fit: cover;
+        object-fit: cover;
+        top: 0;
+        -ms-transform: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        transform: none;
+        width: 100%;
+    }
+}
+
+
+/* Hides div in Customizer preview when header images or videos change. */
+
+body:not(.has-header-image):not(.has-header-video) .custom-header-media {
+    display: none;
+}
+
+.has-header-image.kmtheme-front-page .site-branding,
+.has-header-video.kmtheme-front-page .site-branding,
+.has-header-image.home.blog .site-branding,
+.has-header-video.home.blog .site-branding {
+    display: table-cell;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+//
+// head right 
+// =========================================
+.head-right-wrap {
+    float: right;
+    z-index: 100;
+    padding-top: 8px;
+    > .button{
+        margin-left: @trim-small;
+        @media only screen and (min-width:576px){
+            i{
+                display: none;
+            }
+        }
+    }
+    @media only screen and (max-width:@screen-xlg){
+        > .button{
+            margin-left: @element-spacing;
+        }
+    }
+    @media only screen and (max-width:1099px){
+        padding-top: 4px;
+    }
+    @media only screen and (max-width:@screen-lg){
+        padding-right: 35px;
+    }
+    @media only screen and (max-width:767px){
+        padding-top: 1px;
+        > .button{
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+    @media only screen and (max-width:575px){
+        > .button{
+            padding-left: 0;
+            padding-right: 0;
+            margin-right: 12px;
+            margin-left: @box-spacing;
+            border: none;
+            background: none;
+            font-size: @font-size__h5;
+            &.signup, span{
+                display: none;
+            }
+            &:hover, &focus{
+                color: @primary--theme__color;
+                background: none;
+                border:none;
+            }
+        }
+    }
+}
+
+.head-right {
+    float: left;
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 12px;
+    display: none;
+    &.desktop {
+        padding: 0 0 12px 0
+    }
+}
+
+.lang-tr {
+    float: right;
+    height: 22px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    select {
+        height: auto;
+        line-height: inherit;
+        padding: 0
+    }
+}
+
+.have-fdbk a {
+    color: @primary--theme__color
+}
+
+.accss-top {
+    clear: both;
+    position: absolute;
+    bottom: -6px;
+    right: 0;
+    a.icon-accessibility {
+        .icons-sprite;
+        background-position: -5px -8px;
+        width: 66px;
+        height: 32px;
+        display: inline-block;
+        &:hover {
+            background-position: -5px -49px
+        }
+    }
+}
+
+//
+// social icons 
+// =========================================
+.social-icons {
+    float: left;
+    clear: both;
+    margin-right: 0px;
+    ul {
+        margin-bottom: 0
+    }
+    li {
+        display: inline-block;
+        img:hover {
+            opacity: 0.7;
+            filter: alpha(opacity=70)
+        }
+    }
+}
+@media only screen and (max-width: 782px){
+    .admin-bar .site-header{
+        top: 46px;
+    }
+}
+@media only screen and (min-width:@screen-md) {
+    .topbar-msgbar {
+        .icon-top-toggle {
+            right: 116px;
+            left: auto;
+            margin: 0
+        }
+    }
+    .head-right {
+        float: right;
+        padding: 0 0 12px 0
+    }
+    .social-icons {
+        float: right;
+        margin-right: 80px;
+    }
+    .have-fdbk a {
+        color: @text-color__base
+    }
+    .accss-top {
+        right: 88px
+    }
+}
+@media only screen and (max-width:@screen-md){
+    .site-header{
+        .topbar-msgbar .wrap{
+            display: none;
+        }
+        .custom-header{
+            margin-bottom: 0 !important;
+        }
+        &.site-header-fixed{
+            .icon-search-toggle{
+                .transition(all ease 0.4s);
+            }
+        }
+    }
+}
+@media only screen and (min-width:@screen-lg) {
+    .social-icons {
+        margin-right: 0
+    }
+    .accss-top {
+        right: 0
+    }
+}
+
+@media only screen and (min-width:@screen-xlg) {
+    .topbar-msgbar {
+        .icon-top-toggle {
+            right: 170px
+        }
+    }
+    .site-header{
+        .head-wrapper{
+            > .wrap{
+                max-width: 90%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:(@screen-xlg + 155)) {
+    .topbar-msgbar {
+        .icon-top-toggle {
+            right: 60px;
+        }
+    }
+}

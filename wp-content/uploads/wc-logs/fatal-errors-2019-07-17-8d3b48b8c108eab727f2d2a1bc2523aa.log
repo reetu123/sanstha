@@ -1,0 +1,2 @@
+2019-07-17T10:41:43+00:00 CRITICAL Out of memory (allocated 41943040) (tried to allocate 12288 bytes) in E:\xampp\htdocs\woofy\wp-includes\widgets\class-wp-widget-media-image.php on line 66
+

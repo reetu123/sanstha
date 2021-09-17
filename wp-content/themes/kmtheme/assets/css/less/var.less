@@ -1,0 +1,271 @@
+//
+// Wordpress
+//
+// NOTICE OF LICENSE
+//
+
+// =============================================
+// Defaults
+// =============================================
+
+// Border Radius
+
+@border-radius__default: 5px;
+@border-radius__rounded: 50%;
+
+// Transition
+
+@default-transition-property: all;
+@default-transition-duration: 200ms;
+@default-transition-function: linear;
+@default-transition-delay: 0;
+
+// =============================================
+// Primary Break Points
+// =============================================
+
+// These should be used with the bp (max-width, xx) mixin
+// where a min-width is used, remember to +1 to break correctly.
+
+@screen-xxs: 320px;
+@screen-xs: 479px;
+@screen-s: 599px;
+@screen-md: 768px;
+@screen-lg: 979px;
+@screen-xlg: 1310px;
+
+// =============================================
+// Base Values
+// =============================================
+
+// Spacing
+
+@gap: 10px;
+@btn-lg-pad:15px 35px ;
+@gap-vertical-lg:50px;
+
+
+@trim: 30px;
+// This will get applied on viewports smaller than 480px
+@trim-small: 15px;
+
+// Padding that will get applied to content areas
+@box-spacing-large: 20px;
+
+// Standard padding around box elements such as banner messages, etc
+@box-spacing: 10px;
+
+// Standard spacing between elements within a box, such as "Add to cart", "Price box", etc
+@element-spacing: 7px;
+
+// Dimensions
+
+@full-content-width: 100%;
+@full-container-width: @full-content-width;
+
+@max-content-width: 1360px;
+@max-container-width: @trim + @max-content-width + @trim;
+@max-std-formatted-width: 50em;
+
+// =============================================
+// Brand Colors
+// =============================================
+
+// Usually not used directly in Sass partials.
+// Only used to define context-based color vars in this file.
+
+@primary--theme__color: #cc0000;
+@color__blue: #3399CC;
+@color__green: #d6e9c6;
+@color__pink: #D85378;
+@color__orange: #F3793B;
+@color__red: #CF5050;
+@color__yellow: #FFDD15;
+@color__black: #000000;
+@color__gray: #333333;
+@color__gray-lt: #d6d6d6;
+@color__gray-xlt: #f2f2f2;
+@color__gray-dk: #444444;
+@color__white: #ffffff;
+@step__color: #f8f9fa;
+
+// =============================================
+// Base Colors
+// =============================================
+
+// Text
+
+@text-color__base: #444444;
+@text-color__gray: #A0A0A0;
+@text-color__white: #E6E6E6;
+
+@headingtext-color__base:@text-color__base;
+
+// Primary font color for headings and other non-link text
+@primary__text-color: @text-color__base;
+
+
+// Interaction
+
+@color__action: @color__black;
+@color__stimulus: darken(@color__blue, 15%);
+@color__subtle: #A0A0A0;
+
+// Notifications
+
+@color__danger: #a94442;
+@color__danger-background: #f2dede;
+@color__danger-border: #ebccd1;
+
+@color__success: @color__green;
+@color__success-text: #3c763d;
+@color__success-background: #dff0d8;
+
+@color__warn: #E26703;
+@color__warn-background: #F9EBE6;
+
+@color__dark: #676157;
+@color__x-light: #d7d7d7;
+
+// Global Elements
+
+@color__divider-border: #ECECEC;
+
+@color__input--border-error: red;
+@color__input--border-success: #3c763d;
+
+// =============================================
+// Element Colors
+// =============================================
+
+// Buttons
+
+@primary__button--font--family:@heading__font-family;
+@primary__button--background:@primary--theme__color;
+@primary__button--textcolor: @color__white;
+@color__button-hover: darken(@color__black, 5%);
+@color__button-active: darken(@color__black, 10%);
+
+@primary__button--hoverbackground:@color__black;
+@primary__button--hovertextcolor: @color__white;
+
+@primary__button--padding-top-bottom:13px;
+@primary__button--padding-left-right:15px;
+
+// Secondary Buttons
+
+@secondary__button--background:#444444;
+@color__button-secondary: #DDDDDD;
+@color__button-secondary-hover: darken(#DDDDDD, 5%);
+@color__button-secondary-active: darken(#DDDDDD, 10%);
+
+@color__button-subtle: #ECECEC;
+
+// Forms
+
+@color__input-border: #cccccc;
+@color__input-border-focus: @color__blue;
+
+@input-padding-default:15px;
+@select-padding-default:0 10px;
+
+@input-height-default:40px;
+@input-lineheight-default:40px;
+
+@color__input-placeholder: text-color__gray;
+@color__input-text: @text-color__base;
+
+@color__fieldset-border: #CCCCCC;
+@color__fieldset-border-light: #EDEDED;
+
+// Headings
+
+@color__h1: @color__black;
+@color__h2: @color__black;
+@color__h3: @text-color__base
+@color__h4: @text-color__base;
+@color__h5: @text-color__base;
+@color__h6: @text-color__base;
+
+// Link
+@color__link: @color__action;
+@color__link-hover: darken(@color__action, 5%);
+@color__link-focus: @color__action;
+@color__link-active: darken(@color__action, (5% / 2));
+
+// Module (generic)
+
+@color__module-background: #f2f2f2;
+@color__module-background-hover: shade(@color__module-background, 3%);
+@color__module-background-secondary: #EAF8FF;
+@color__module-background-dark: #AAAAAA;
+// This should be applied whenever the border is surrounding a white element and/or is directly showing on white.
+@color__module-border: #CCCCCC;
+// This should be applied whenever the border is wrapping an element with @color__module-background
+@color__module-border-light: #EDEDED;
+@color__module-border-dark: #777777;
+@color__module-border-highlight: @color__blue;
+
+
+// Table
+
+@color__table-background: #F4F4F4;
+@color__table-border: #C0C0C0;
+
+@color__table-zebra-odd: #F8F7F5;
+@color__table-zebra-even: #EEEDED;
+
+// Tabs
+
+@color__tabs-background: #f2f2f2;
+@color__subtabs-background: #f6f6f6;
+
+// Email
+@color__email-background: #EBEBEB;
+@color__email-background-secondary: #E1F0F8;
+@color__email-border: #C3CED4;
+@color__email-action: #3696C2;
+@color__email-cell: #F1F1F1;
+@color__email-highlighted-background: #FFFDD9;
+@color__email-highlighted-border: #FFF74C;
+
+// =============================================
+// Typography
+// =============================================
+
+// Font Stacks
+
+@base__font-family: 'HelveticaNeue', 'Helvetica Neue', Verdana, Arial, sans-serif;
+@heading__font-family: 'HelveticaNeue-cond', Verdana, Arial, sans-serif;
+
+@primary__font-family: @base__font-family;
+
+// Font Sizes
+
+@font-size__base: 13px;
+@font-size__md: 14px;
+@font-size__lg: 15px;
+
+@font-size__sm: 12px;
+@font-size__xsm: 11px;
+@font-size__xxsm: 10px;
+
+// Base Measures
+
+@line-height__base: 1.4;
+@line-height__l:2;
+
+//  Weights
+@font-weight__light: 300;
+@font-weight__regular: 400;
+@font-weight__heavier: 500;
+@font-weight__semibold: 600;
+@font-weight__bold: 700;
+
+//  Styles
+@font-style__base: normal;
+@font-style__emphasis: italic;
+
+//  text Spacing
+@letter-spacing__base: 0.5px;
+

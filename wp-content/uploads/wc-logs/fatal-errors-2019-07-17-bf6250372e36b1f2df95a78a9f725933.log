@@ -1,0 +1,197 @@
+2019-07-17T05:52:53+00:00 CRITICAL syntax error, unexpected '}' in /var/www/html/woofy/wp-content/themes/kmtheme/header.php on line 114
+
+2019-07-17T05:52:54+00:00 CRITICAL syntax error, unexpected '}' in /var/www/html/woofy/wp-content/themes/kmtheme/header.php on line 114
+
+2019-07-17T05:52:54+00:00 CRITICAL syntax error, unexpected '}' in /var/www/html/woofy/wp-content/themes/kmtheme/header.php on line 114
+
+2019-07-17T05:52:55+00:00 CRITICAL syntax error, unexpected '}' in /var/www/html/woofy/wp-content/themes/kmtheme/header.php on line 114
+
+2019-07-17T05:52:55+00:00 CRITICAL syntax error, unexpected '}' in /var/www/html/woofy/wp-content/themes/kmtheme/header.php on line 114
+
+2019-07-17T05:53:06+00:00 CRITICAL syntax error, unexpected '}' in /var/www/html/woofy/wp-content/themes/kmtheme/header.php on line 114
+
+2019-07-17T06:10:31+00:00 CRITICAL syntax error, unexpected 'wp_editor' (T_STRING) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1063
+
+2019-07-17T06:10:32+00:00 CRITICAL syntax error, unexpected 'wp_editor' (T_STRING) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1063
+
+2019-07-17T06:10:32+00:00 CRITICAL syntax error, unexpected 'wp_editor' (T_STRING) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1063
+
+2019-07-17T06:10:44+00:00 CRITICAL syntax error, unexpected 'wp_editor' (T_STRING) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1063
+
+2019-07-17T06:10:48+00:00 CRITICAL syntax error, unexpected 'wp_editor' (T_STRING) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1063
+
+2019-07-17T06:31:23+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/woofy/wp-content/themes/kmtheme/header.php on line 139
+
+2019-07-17T06:34:00+00:00 CRITICAL syntax error, unexpected '?>' in /var/www/html/woofy/wp-content/themes/kmtheme/header.php on line 122
+
+2019-07-17T06:44:39+00:00 CRITICAL Uncaught Error: Call to undefined function reverse_strrchr() in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:1056
+Stack trace:
+#0 /var/www/html/woofy/wp-content/themes/kmtheme/header.php(123): print_excerpt(200)
+#1 /var/www/html/woofy/wp-includes/template.php(722): require_once('/var/www/html/w...')
+#2 /var/www/html/woofy/wp-includes/template.php(671): load_template('/var/www/html/w...', true)
+#3 /var/www/html/woofy/wp-includes/general-template.php(41): locate_template(Array, true)
+#4 /var/www/html/woofy/wp-content/themes/kmtheme/page.php(18): get_header()
+#5 /var/www/html/woofy/wp-includes/template-loader.php(78): include('/var/www/html/w...')
+#6 /var/www/html/woofy/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#7 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#8 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1056
+
+2019-07-17T08:44:06+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function pmpro_report_login_wp_login(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php:529
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): pmpro_report_login_wp_login('reetu@yopmail.c...')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(783): do_action('wp_login', 'reetu@yopmail.c...')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/w in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php on line 529
+
+2019-07-17T09:09:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function pmpro_report_login_wp_login(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php:529
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): pmpro_report_login_wp_login('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(783): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90) in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php on line 529
+
+2019-07-17T09:12:58+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function pmpro_report_login_wp_login(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php:529
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): pmpro_report_login_wp_login('reetu@yopmail.c...')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(783): do_action('wp_login', 'reetu@yopmail.c...')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/w in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php on line 529
+
+2019-07-17T09:13:59+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function pmpro_report_login_wp_login(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php:529
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): pmpro_report_login_wp_login('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(783): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90) in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php on line 529
+
+2019-07-17T09:14:15+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function pmpro_report_login_wp_login(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php:529
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): pmpro_report_login_wp_login('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(783): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90) in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php on line 529
+
+2019-07-17T09:17:57+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function pmpro_report_login_wp_login(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php:529
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): pmpro_report_login_wp_login('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(783): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90) in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php on line 529
+
+2019-07-17T09:18:15+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function pmpro_report_login_wp_login(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php:529
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): pmpro_report_login_wp_login('reetu@yopmail.c...')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(783): do_action('wp_login', 'reetu@yopmail.c...')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/w in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php on line 529
+
+2019-07-17T09:18:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function pmpro_report_login_wp_login(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login555.php:529
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): pmpro_report_login_wp_login('reetu@yopmail.c...')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(783): do_action('wp_login', 'reetu@yopmail.c...')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/htm in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login555.php on line 529
+
+2019-07-17T09:33:10+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function pmpro_report_login_wp_login(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php:529
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): pmpro_report_login_wp_login('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(783): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90) in /var/www/html/woofy/wp-content/plugins/paid-memberships-pro/adminpages/reports/login.php on line 529
+
+2019-07-17T10:19:55+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1045
+
+2019-07-17T10:20:26+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1045
+
+2019-07-17T10:20:35+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1045
+
+2019-07-17T10:20:36+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1045
+
+2019-07-17T10:20:36+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1045
+
+2019-07-17T10:20:36+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1045
+
+2019-07-17T10:21:56+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1045
+
+2019-07-17T11:58:59+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_User as array in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php:17
+Stack trace:
+#0 /var/www/html/woofy/wp-content/plugins/km-services/class.kmlist.php(51): include()
+#1 /var/www/html/woofy/wp-includes/shortcodes.php(325): kmlist->km_user_profile('', '', 'user_profile')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 /var/www/html/woofy/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(user_p...', 'do_shortcode_ta...', '[user_profile]\n')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): do_shortcode('[user_profile]\n')
+#5 /var/www/html/woofy/wp-includes/plugin.php(208): WP_Hook->apply_filters('[user_profile]\n', Array)
+#6 /var/www/html/woofy/wp-includes/post-template.php(247): apply_filters('the_content', '[user_profile]')
+#7 /var/www/html/woofy/wp-content/themes/kmtheme/template-parts/page/content-page.php(22): the_content()
+#8 /var/www/html/woofy/wp-includes/template.php(724): require('/var/ in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 17
+
+2019-07-17T11:59:17+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_User as array in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php:17
+Stack trace:
+#0 /var/www/html/woofy/wp-content/plugins/km-services/class.kmlist.php(51): include()
+#1 /var/www/html/woofy/wp-includes/shortcodes.php(325): kmlist->km_user_profile('', '', 'user_profile')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 /var/www/html/woofy/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(user_p...', 'do_shortcode_ta...', '[user_profile]\n')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): do_shortcode('[user_profile]\n')
+#5 /var/www/html/woofy/wp-includes/plugin.php(208): WP_Hook->apply_filters('[user_profile]\n', Array)
+#6 /var/www/html/woofy/wp-includes/post-template.php(247): apply_filters('the_content', '[user_profile]')
+#7 /var/www/html/woofy/wp-content/themes/kmtheme/template-parts/page/content-page.php(22): the_content()
+#8 /var/www/html/woofy/wp-includes/template.php(724): require('/var/ in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 17
+
+2019-07-17T11:59:36+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_User as array in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php:18
+Stack trace:
+#0 /var/www/html/woofy/wp-content/plugins/km-services/class.kmlist.php(51): include()
+#1 /var/www/html/woofy/wp-includes/shortcodes.php(325): kmlist->km_user_profile('', '', 'user_profile')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 /var/www/html/woofy/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(user_p...', 'do_shortcode_ta...', '[user_profile]\n')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): do_shortcode('[user_profile]\n')
+#5 /var/www/html/woofy/wp-includes/plugin.php(208): WP_Hook->apply_filters('[user_profile]\n', Array)
+#6 /var/www/html/woofy/wp-includes/post-template.php(247): apply_filters('the_content', '[user_profile]')
+#7 /var/www/html/woofy/wp-content/themes/kmtheme/template-parts/page/content-page.php(22): the_content()
+#8 /var/www/html/woofy/wp-includes/template.php(724): require('/var/ in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 18
+

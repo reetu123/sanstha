@@ -1,0 +1,40 @@
+2019-07-18T03:53:03+00:00 CRITICAL Uncaught Error: Call to undefined function mysql_fetch_assoc() in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php:23
+Stack trace:
+#0 /var/www/html/woofy/wp-content/plugins/km-services/class.kmlist.php(51): include()
+#1 /var/www/html/woofy/wp-includes/shortcodes.php(325): kmlist->km_user_profile('', '', 'user_profile')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 /var/www/html/woofy/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(user_p...', 'do_shortcode_ta...', '[user_profile]\n')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): do_shortcode('[user_profile]\n')
+#5 /var/www/html/woofy/wp-includes/plugin.php(208): WP_Hook->apply_filters('[user_profile]\n', Array)
+#6 /var/www/html/woofy/wp-includes/post-template.php(247): apply_filters('the_content', '[user_profile]')
+#7 /var/www/html/woofy/wp-content/themes/kmtheme/template-parts/page/content-page.php(22): the_content()
+#8 /var/www/html/woofy/wp-includes/template.php(724): require('/ in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 23
+
+2019-07-18T04:03:03+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 28
+
+2019-07-18T04:26:16+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 105
+
+2019-07-18T04:27:53+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 105
+
+2019-07-18T07:25:23+00:00 CRITICAL require_once(): Failed opening required '/var/www/html/woofy/wp-content/themes/kmtheme/img_upload_resize_crop.php' (include_path='.:/usr/share/php') in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1107
+
+2019-07-18T10:28:04+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 34
+
+2019-07-18T10:46:01+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 60
+
+2019-07-18T11:08:26+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_slug() in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php:13
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/template-loader.php(78): include()
+#1 /var/www/html/woofy/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 13
+
+2019-07-18T11:17:06+00:00 CRITICAL syntax error, unexpected ')' in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 45
+
+2019-07-18T11:17:17+00:00 CRITICAL syntax error, unexpected ')' in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 45
+
+2019-07-18T11:17:17+00:00 CRITICAL syntax error, unexpected ')' in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 45
+
+2019-07-18T12:04:46+00:00 CRITICAL Object of class WP_Post could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 67
+

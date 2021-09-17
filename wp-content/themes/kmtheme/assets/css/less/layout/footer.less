@@ -1,0 +1,146 @@
+//
+// Footer
+// ======================================================
+.site-footer {
+    background: @color__gray-xlt
+}
+
+.site-footer .wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 14px
+}
+
+
+/* Footer widgets */
+
+.site-footer {
+    .widget-area {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .widget-column {
+        float: left;
+        width: 100%;
+        ul {
+            li {
+                a {
+                    position: relative;
+                    padding-left: 10px;
+                    &:before {
+                        content: "•";
+                        position: absolute;
+                        left: 0;
+                        top: 2px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        &.footer-widget-5 {
+            float: right;
+            max-width: 232px;
+            .textwidget {
+                a {
+                    background: @primary--theme__color;
+                    color: #fff;
+                    padding: 10px 25px 11px;
+                    margin-top: 21px;
+                    text-transform: uppercase;
+                    float: left;
+                    .border--radius(4px);
+                    font-weight: 500;
+                    font-family: @heading__font-family;
+                    &:hover {
+                        background: #000
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Site info */
+
+.site-info {
+    font-size: 11px;
+    padding: 5px 0;
+    background: #fff;
+    text-align: center;
+    span {color: @primary--theme__color}
+}
+
+.site-info a {
+    color: #666;
+}
+
+.site-info .sep {
+    margin: 0;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    width: 100%;
+}
+
+// 
+// mobile
+//
+
+@media only screen and (max-width:@screen-xs) { 
+    .site-footer .widget-column  {
+        .menu {display: none;text-align: center}
+        .widget-title {
+            text-align: center;
+            &.mobile-active + div .menu {display: block;}
+        }
+    }
+}
+
+@media only screen and (min-width:@screen-xs) {
+    .site-footer {
+        .widget-column {
+            &.col-5 {width: 50% }
+            ul li {
+                margin-bottom: 5px
+            }
+        }
+    }
+}
+
+//
+// Desktop
+// ==============================================
+
+@media only screen and (min-width:@screen-lg) {
+    .site-footer {
+        .widget-column {
+            &.col-5 {
+                width: 25%
+            }
+        }
+    }
+    .social-navigation {
+        clear: left;
+        float: left;
+        margin-bottom: 0;
+        width: 36%;
+    }
+        
+    .site-info .sep {
+        margin: 0 0.5em;
+        display: inline;
+        visibility: visible;
+        height: auto;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width:(@screen-lg + 45)) {
+    .site-footer {
+        .widget-column {
+            &.col-5 {
+                width: 20%
+            }
+        }
+    }
+}

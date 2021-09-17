@@ -1,0 +1,57 @@
+2019-07-19T03:49:20+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 75
+
+2019-07-19T03:58:30+00:00 CRITICAL syntax error, unexpected ''first_name'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 78
+
+2019-07-19T06:29:59+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 139
+
+2019-07-19T07:11:50+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 149
+
+2019-07-19T07:15:08+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 138
+
+2019-07-19T07:15:20+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 138
+
+2019-07-19T07:15:33+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 138
+
+2019-07-19T07:22:40+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 140
+
+2019-07-19T07:24:42+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 140
+
+2019-07-19T07:24:56+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 140
+
+2019-07-19T07:25:14+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 140
+
+2019-07-19T07:25:23+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 140
+
+2019-07-19T07:25:39+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 140
+
+2019-07-19T07:43:59+00:00 CRITICAL Uncaught Error: Call to undefined function getUniqueHotels() in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:1118
+Stack trace:
+#0 /var/www/html/woofy/wp-settings.php(499): include()
+#1 /var/www/html/woofy/wp-config.php(90): require_once('/var/www/html/w...')
+#2 /var/www/html/woofy/wp-load.php(37): require_once('/var/www/html/w...')
+#3 /var/www/html/woofy/wp-admin/admin-ajax.php(22): require_once('/var/www/html/w...')
+#4 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1118
+
+2019-07-19T07:44:31+00:00 CRITICAL Uncaught Error: Call to undefined function getUniqueHotels() in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:1118
+Stack trace:
+#0 /var/www/html/woofy/wp-settings.php(499): include()
+#1 /var/www/html/woofy/wp-config.php(90): require_once('/var/www/html/w...')
+#2 /var/www/html/woofy/wp-load.php(37): require_once('/var/www/html/w...')
+#3 /var/www/html/woofy/wp-admin/admin-ajax.php(22): require_once('/var/www/html/w...')
+#4 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1118
+
+2019-07-19T07:51:37+00:00 CRITICAL Object of class stdClass could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1125
+
+2019-07-19T07:52:39+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:1124
+Stack trace:
+#0 /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php(143): uniqueAssocArray(Array, 'id')
+#1 /var/www/html/woofy/wp-includes/template-loader.php(78): include('/var/www/html/w...')
+#2 /var/www/html/woofy/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#3 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#4 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 1124
+
+2019-07-19T09:34:30+00:00 CRITICAL syntax error, unexpected ''.ucfirst($last_name) ?></h2>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /var/www/html/woofy/wp-content/themes/kmtheme/tasker_search_list.php on line 93
+

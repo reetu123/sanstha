@@ -1,0 +1,83 @@
+//
+// About Us
+// ======================================================
+
+.count-wrap {
+	text-align: center;
+	color: @primary--theme__color;
+	font-size: @font-size__h4;
+	font-weight: @font-weight__bold;
+	padding-top: @box-spacing-large;
+	line-height: 1;
+	>p{
+		margin-bottom: 0;
+	}
+	h4{
+		color: @color__white;
+		font-size: @font-size__lg;
+		padding-top: 0;
+		font-weight: @font-weight__regular;
+	}
+}
+.pet-food-wrap{
+	border: 1px solid @color__gray-xlt;
+	padding: 40px @trim;
+	img{
+		margin: auto;
+	}
+}
+.about-history-wrap{
+	&:first-child{
+		padding-bottom: @trim;
+	}
+	h4{
+		&.liner{
+			font-weight: @font-weight__regular;
+			letter-spacing: 1px;
+			position: relative;
+			margin-bottom: @trim;
+			&:after{
+				position: absolute;
+				content: "";
+				background-color: @primary--theme__color;
+				height: 3px;
+				width: 180px;
+				bottom: 0;
+				left: 0;
+			}
+		}
+	}
+}
+@media only screen and (min-width:@screen-md){
+	.about-history-wrap{
+		&:first-child{
+			padding-bottom: @gap-vertical-lg + @trim-small;
+		}
+		.vc_col-sm-8{
+			width: 60%;
+		}
+		.vc_col-sm-4{
+			width: 40%;
+		}
+		.desktop-r{
+			float: right;
+		}
+		h4{
+			font-size: 30px;
+		}
+	}
+	.pet-food-wrap{
+		p{
+			font-size: @font-size__h5;
+		}
+	}
+	.count-wrap {
+		display: inline-block;
+		vertical-align: middle;
+		width: 32%;
+		font-size: @gap-vertical-lg;
+	}
+}
+.howit-works-sec{
+	position: relative;
+}

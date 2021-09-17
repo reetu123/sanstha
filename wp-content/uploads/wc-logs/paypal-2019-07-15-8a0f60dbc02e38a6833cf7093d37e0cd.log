@@ -1,0 +1,836 @@
+2019-07-15T10:49:34+00:00 INFO Generating payment form for order 95. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T10:49:34+00:00 INFO PayPal Request Args for order 95: Array
+(
+    [cmd] => _cart
+    [business] => kinexmediatesting@gmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/95/?key=wc_order_5d2c5a3a19f44&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c5a3a19f44&order_id=95&redirect&_wpnonce=c7f1abc9a5
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-95
+    [custom] => {"order_id":95,"order_key":"wc_order_5d2c5a3a19f44"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Basic
+    [quantity_1] => 1
+    [amount_1] => 39
+    [item_number_1] => 
+)
+
+2019-07-15T10:51:35+00:00 INFO Generating payment form for order 96. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T10:51:35+00:00 INFO PayPal Request Args for order 96: Array
+(
+    [cmd] => _cart
+    [business] => kinexmediatesting@gmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/96/?key=wc_order_5d2c5ab2c5b8d&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c5ab2c5b8d&order_id=96&redirect&_wpnonce=c7f1abc9a5
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-96
+    [custom] => {"order_id":96,"order_key":"wc_order_5d2c5ab2c5b8d"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Basic
+    [quantity_1] => 1
+    [amount_1] => 39
+    [item_number_1] => 
+)
+
+2019-07-15T10:54:36+00:00 INFO Generating payment form for order 97. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T10:54:36+00:00 INFO PayPal Request Args for order 97: Array
+(
+    [cmd] => _cart
+    [business] => kinexmediatesting@gmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/97/?key=wc_order_5d2c5b67753bf&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c5b67753bf&order_id=97&redirect&_wpnonce=c7f1abc9a5
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-97
+    [custom] => {"order_id":97,"order_key":"wc_order_5d2c5b67753bf"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Basic
+    [quantity_1] => 1
+    [amount_1] => 39
+    [item_number_1] => 
+)
+
+2019-07-15T10:55:29+00:00 INFO Generating payment form for order 98. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T10:55:29+00:00 INFO PayPal Request Args for order 98: Array
+(
+    [cmd] => _cart
+    [business] => kinexmediatesting@gmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/98/?key=wc_order_5d2c5b9d1168c&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c5b9d1168c&order_id=98&redirect&_wpnonce=c7f1abc9a5
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-98
+    [custom] => {"order_id":98,"order_key":"wc_order_5d2c5b9d1168c"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Premium
+    [quantity_1] => 1
+    [amount_1] => 119.99
+    [item_number_1] => 
+)
+
+2019-07-15T10:55:48+00:00 INFO Generating payment form for order 98. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T10:55:48+00:00 INFO PayPal Request Args for order 98: Array
+(
+    [cmd] => _cart
+    [business] => kinexmediatesting@gmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/98/?key=wc_order_5d2c5b9d1168c&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c5b9d1168c&order_id=98&redirect&_wpnonce=c7f1abc9a5
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-98
+    [custom] => {"order_id":98,"order_key":"wc_order_5d2c5b9d1168c"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Premium
+    [quantity_1] => 1
+    [amount_1] => 119.99
+    [item_number_1] => 
+)
+
+2019-07-15T10:56:27+00:00 INFO Generating payment form for order 98. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T10:56:27+00:00 INFO PayPal Request Args for order 98: Array
+(
+    [cmd] => _cart
+    [business] => kinexmediatesting@gmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/98/?key=wc_order_5d2c5b9d1168c&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c5b9d1168c&order_id=98&redirect&_wpnonce=c7f1abc9a5
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-98
+    [custom] => {"order_id":98,"order_key":"wc_order_5d2c5b9d1168c"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Premium
+    [quantity_1] => 1
+    [amount_1] => 119.99
+    [item_number_1] => 
+)
+
+2019-07-15T10:59:30+00:00 INFO Generating payment form for order 98. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T10:59:30+00:00 INFO PayPal Request Args for order 98: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/98/?key=wc_order_5d2c5b9d1168c&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c5b9d1168c&order_id=98&redirect&_wpnonce=c7f1abc9a5
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-98
+    [custom] => {"order_id":98,"order_key":"wc_order_5d2c5b9d1168c"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Premium
+    [quantity_1] => 1
+    [amount_1] => 119.99
+    [item_number_1] => 
+)
+
+2019-07-15T11:02:04+00:00 INFO Generating payment form for order 99. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T11:02:04+00:00 INFO PayPal Request Args for order 99: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/99/?key=wc_order_5d2c5d281a1bc&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c5d281a1bc&order_id=99&redirect&_wpnonce=f1299b1cd6
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-99
+    [custom] => {"order_id":99,"order_key":"wc_order_5d2c5d281a1bc"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Premium
+    [quantity_1] => 1
+    [amount_1] => 119.99
+    [item_number_1] => 
+)
+
+2019-07-15T11:07:54+00:00 INFO Generating payment form for order 100. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T11:07:54+00:00 INFO PayPal Request Args for order 100: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/100/?key=wc_order_5d2c5e85489bf&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c5e85489bf&order_id=100&redirect&_wpnonce=f1299b1cd6
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-100
+    [custom] => {"order_id":100,"order_key":"wc_order_5d2c5e85489bf"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Premium
+    [quantity_1] => 1
+    [amount_1] => 119.99
+    [item_number_1] => 
+    [item_name_2] => Proffessional
+    [quantity_2] => 1
+    [amount_2] => 69.99
+    [item_number_2] => 
+)
+
+2019-07-15T11:20:04+00:00 INFO Generating payment form for order 101. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T11:20:04+00:00 INFO PayPal Request Args for order 101: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/101/?key=wc_order_5d2c615feb066&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c615feb066&order_id=101&redirect&_wpnonce=f1299b1cd6
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-101
+    [custom] => {"order_id":101,"order_key":"wc_order_5d2c615feb066"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Premium
+    [quantity_1] => 2
+    [amount_1] => 11
+    [item_number_1] => 
+)
+
+2019-07-15T11:21:33+00:00 INFO Generating payment form for order 102. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T11:21:33+00:00 INFO PayPal Request Args for order 102: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/102/?key=wc_order_5d2c61b939eef&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c61b939eef&order_id=102&redirect&_wpnonce=f1299b1cd6
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-102
+    [custom] => {"order_id":102,"order_key":"wc_order_5d2c61b939eef"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Basic
+    [quantity_1] => 1
+    [amount_1] => 10
+    [item_number_1] => 
+)
+
+2019-07-15T11:23:51+00:00 INFO Generating payment form for order 103. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T11:23:51+00:00 INFO PayPal Request Args for order 103: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/103/?key=wc_order_5d2c624281fe2&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c624281fe2&order_id=103&redirect&_wpnonce=f1299b1cd6
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-103
+    [custom] => {"order_id":103,"order_key":"wc_order_5d2c624281fe2"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Basic
+    [quantity_1] => 2
+    [amount_1] => 10
+    [item_number_1] => 
+)
+
+2019-07-15T11:26:43+00:00 INFO Generating payment form for order 103. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T11:26:43+00:00 INFO PayPal Request Args for order 103: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/103/?key=wc_order_5d2c624281fe2&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c624281fe2&order_id=103&redirect&_wpnonce=f1299b1cd6
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-103
+    [custom] => {"order_id":103,"order_key":"wc_order_5d2c624281fe2"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [address_override] => 0
+    [no_shipping] => 0
+    [tax_cart] => 0.00
+    [item_name_1] => Basic
+    [quantity_1] => 2
+    [amount_1] => 10
+    [item_number_1] => 
+)
+
+2019-07-15T11:35:16+00:00 INFO Generating payment form for order 110. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T11:35:16+00:00 INFO PayPal Request Args for order 110: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/110/?key=wc_order_5d2c64ef42f75&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c64ef42f75&order_id=110&redirect&_wpnonce=f1299b1cd6
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-110
+    [custom] => {"order_id":110,"order_key":"wc_order_5d2c64ef42f75"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Basic
+    [quantity_1] => 1
+    [amount_1] => 8
+    [item_number_1] => 
+)
+
+2019-07-15T11:45:45+00:00 INFO Generating payment form for order 117. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T11:45:45+00:00 INFO PayPal Request Args for order 117: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/117/?key=wc_order_5d2c6764a076c&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c6764a076c&order_id=117&redirect&_wpnonce=f1299b1cd6
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-117
+    [custom] => {"order_id":117,"order_key":"wc_order_5d2c6764a076c"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Basic
+    [quantity_1] => 1
+    [amount_1] => 8
+    [item_number_1] => 
+)
+
+2019-07-15T12:00:24+00:00 INFO Generating payment form for order 119. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T12:00:24+00:00 INFO PayPal Request Args for order 119: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/119/?key=wc_order_5d2c6ad39085b&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c6ad39085b&order_id=119&redirect&_wpnonce=230d49893d
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-119
+    [custom] => {"order_id":119,"order_key":"wc_order_5d2c6ad39085b"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Premium
+    [quantity_1] => 1
+    [amount_1] => 12
+    [item_number_1] => 
+)
+
+2019-07-15T12:02:10+00:00 INFO Generating payment form for order 119. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T12:02:10+00:00 INFO PayPal Request Args for order 119: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/119/?key=wc_order_5d2c6ad39085b&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c6ad39085b&order_id=119&redirect&_wpnonce=230d49893d
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-119
+    [custom] => {"order_id":119,"order_key":"wc_order_5d2c6ad39085b"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Premium
+    [quantity_1] => 1
+    [amount_1] => 12
+    [item_number_1] => 
+)
+
+2019-07-15T12:02:14+00:00 INFO Generating payment form for order 119. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T12:02:15+00:00 INFO PayPal Request Args for order 119: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/119/?key=wc_order_5d2c6ad39085b&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c6ad39085b&order_id=119&redirect&_wpnonce=230d49893d
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-119
+    [custom] => {"order_id":119,"order_key":"wc_order_5d2c6ad39085b"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Premium
+    [quantity_1] => 1
+    [amount_1] => 12
+    [item_number_1] => 
+)
+
+2019-07-15T12:13:30+00:00 INFO Generating payment form for order 124. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T12:13:30+00:00 INFO PayPal Request Args for order 124: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/124/?key=wc_order_5d2c6de5f28d3&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c6de5f28d3&order_id=124&redirect&_wpnonce=230d49893d
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-124
+    [custom] => {"order_id":124,"order_key":"wc_order_5d2c6de5f28d3"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Basic
+    [quantity_1] => 1
+    [amount_1] => 8
+    [item_number_1] => 
+)
+
+2019-07-15T12:27:07+00:00 INFO Generating payment form for order 127. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T12:27:07+00:00 INFO PayPal Request Args for order 127: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/127/?key=wc_order_5d2c711677bf4&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c711677bf4&order_id=127&redirect&_wpnonce=a90f14cd28
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-127
+    [custom] => {"order_id":127,"order_key":"wc_order_5d2c711677bf4"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Basic
+    [quantity_1] => 1
+    [amount_1] => 8
+    [item_number_1] => 
+)
+
+2019-07-15T12:38:13+00:00 INFO Generating payment form for order 129. Notify URL: http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+2019-07-15T12:38:13+00:00 INFO PayPal Request Args for order 129: Array
+(
+    [cmd] => _cart
+    [business] => kinextest3@yopmail.com
+    [no_note] => 1
+    [currency_code] => CAD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://localhost/woofy/checkout/order-received/129/?key=wc_order_5d2c73b09081f&utm_nooverride=1
+    [cancel_return] => http://localhost/woofy/cart/?cancel_order=true&order=wc_order_5d2c73b09081f&order_id=129&redirect&_wpnonce=be2cc0b6fb
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => WC-129
+    [custom] => {"order_id":129,"order_key":"wc_order_5d2c73b09081f"}
+    [notify_url] => http://localhost/woofy/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Basic
+    [quantity_1] => 1
+    [amount_1] => 8
+    [item_number_1] => 
+)
+

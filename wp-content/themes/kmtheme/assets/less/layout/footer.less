@@ -1,0 +1,110 @@
+//
+// Footer
+// ======================================================
+.site-footer {
+    background-color: @color__white;
+    position: relative;
+}
+
+/* Footer widgets */
+.site-footer {
+    text-align: center;
+    border-top: 1px solid @color__gray-lt;
+    border-bottom: 1px solid @color__gray-lt;
+    padding-top: @gap-vertical-lg;
+    padding-bottom: @box-spacing-large;
+    .widget-area {
+        padding-bottom: @trim-small;
+        padding-top: @box-spacing;
+        .widget-column{
+            img{
+                display: inline-block;
+                margin: auto;
+            }
+            ul{
+                li{
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding: 0 @box-spacing;
+                }
+                &.menu{
+                    padding-top: @trim - 5;
+                    li{
+                        padding: 5px @box-spacing-large;
+                        a{
+                            font-size: @font-size__lg;
+                        }
+                    }
+                }
+                &.social-share{
+                    padding-top: @trim;
+                    padding-bottom: @trim;
+                    li{
+                        a{
+                            display: inline-block;
+                            width: 48px;
+                            height: 48px;
+                            line-height: 48px;
+                            font-size: 24px;
+                            text-align: center;
+                            border: 1px solid transparent;
+                            .border--radius(50px);
+                            .transition(all ease-in-out 0.3s);
+                            &.fb{
+                                border-color: #447da5;
+                                color: #447da5;
+                                &:hover, &:focus{
+                                    background-color: #447da5;
+                                    color: @color__white;
+                                }
+                            }
+                            &.twt{
+                                border-color: #30c4ef;
+                                color: #30c4ef;
+                                &:hover, &:focus{
+                                    background-color: #30c4ef;
+                                    color: @color__white;
+                                }
+                            }
+                            &.insta{
+                                border-color: #959595;
+                                color: #959595;
+                                &:hover, &:focus{
+                                    background-color: #959595;
+                                    color: @color__white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav.social-navigation {
+        display: none;
+    }
+}
+
+/* Site info */
+.site-info {
+    font-size: 12px;
+    padding: 0;
+    height: 50px;
+}
+.site-info .sep {
+    margin: 0;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width:@screen-md) {
+
+}
+
+//
+// Desktop
+// ==============================================
+@media only screen and (min-width:@screen-lg) {
+}

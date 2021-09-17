@@ -1,0 +1,82 @@
+/*.slick-prev:before, .slick-next:before {
+	color:#000 !important;
+}*/
+
+/* pagination_custom */
+.pagination_custom {
+	clear:both;
+	position:relative;
+	font-size:11px; /* pagination_custom text size */
+	line-height:13px;
+	float:right; /* pagination_custom float direction */
+}
+
+.pagination_custom span, .pagination_custom a {
+	display:block;
+	float:left;
+	margin: 2px 2px 2px 0;
+	padding:6px 9px 5px 9px;
+	text-decoration:none;
+	width:auto;
+	color:#fff; /* pagination_custom text color */
+	background: #555; /* pagination_custom non-active background color */
+	-webkit-transition: background .15s ease-in-out;
+	-moz-transition: background .15s ease-in-out;
+	-ms-transition: background .15s ease-in-out;
+	-o-transition: background .15s ease-in-out;
+	transition: background .15s ease-in-out;
+}
+
+.pagination_custom a:hover{
+	color:#fff;
+	background: #6AAC70; /* pagination_custom background on hover */
+}
+
+pagination_custom .current{
+	padding:6px 9px 5px 9px;
+	background: #6AAC70; /* Current page background */
+	color:#fff;
+}
+.row .grid_row5{
+	margin-right: -5px;
+	margin-left: -5px;
+}
+.custom_code_for_grid5{
+	padding-left: 5px; 
+	padding-right: 5px;
+	width: 100%;
+	float: left;
+
+}
+@media (min-width: 992px) and (max-width:1199px){
+	.item_description {
+		min-height: 151px;
+	}
+}
+@media (min-width: 1200px){
+	.item_description{min-height: 112px;}
+}
+@media (min-width: 992px){
+	.custom_code_for_grid5{
+		width: 20%;
+		float: left;
+	}
+}
+.misha_loadmore{
+	background-color: #ddd;
+	border-radius: 2px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 800;
+	letter-spacing:1px;
+	cursor:pointer;
+	text-transform: uppercase;
+	padding: 10px 0;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+}
+.misha_loadmore:hover{
+	background-color: #767676;
+	color: #fff;
+}

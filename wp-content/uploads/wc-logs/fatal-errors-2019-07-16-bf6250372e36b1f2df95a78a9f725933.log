@@ -1,0 +1,317 @@
+2019-07-16T04:20:30+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:20:33+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:20:47+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:21:19+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:21:34+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:21:57+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:22:39+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:22:40+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:22:41+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:22:41+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:22:41+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:22:41+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:23:20+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T04:23:34+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 672
+
+2019-07-16T05:30:01+00:00 CRITICAL Uncaught Error: Call to undefined function km_show_error_messages() in /var/www/html/woofy/wp-content/themes/kmtheme/login_form.php:76
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/template-loader.php(78): include()
+#1 /var/www/html/woofy/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/login_form.php on line 76
+
+2019-07-16T05:30:48+00:00 CRITICAL Uncaught Error: Call to undefined function km_show_error_messages() in /var/www/html/woofy/wp-content/themes/kmtheme/login_form.php:74
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/template-loader.php(78): include()
+#1 /var/www/html/woofy/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/login_form.php on line 74
+
+2019-07-16T05:33:05+00:00 CRITICAL Uncaught Error: Call to undefined function km_errors() in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:821
+Stack trace:
+#0 /var/www/html/woofy/wp-content/themes/kmtheme/login_form.php(74): km_show_error_messages()
+#1 /var/www/html/woofy/wp-includes/template-loader.php(78): include('/var/www/html/w...')
+#2 /var/www/html/woofy/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#3 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#4 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 821
+
+2019-07-16T05:33:06+00:00 CRITICAL Uncaught Error: Call to undefined function km_errors() in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:821
+Stack trace:
+#0 /var/www/html/woofy/wp-content/themes/kmtheme/login_form.php(74): km_show_error_messages()
+#1 /var/www/html/woofy/wp-includes/template-loader.php(78): include('/var/www/html/w...')
+#2 /var/www/html/woofy/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#3 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#4 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 821
+
+2019-07-16T05:33:10+00:00 CRITICAL Uncaught Error: Call to undefined function km_errors() in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:821
+Stack trace:
+#0 /var/www/html/woofy/wp-content/themes/kmtheme/login_form.php(74): km_show_error_messages()
+#1 /var/www/html/woofy/wp-includes/template-loader.php(78): include('/var/www/html/w...')
+#2 /var/www/html/woofy/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#3 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#4 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 821
+
+2019-07-16T05:34:20+00:00 CRITICAL Uncaught Error: Call to undefined function km_errors() in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:821
+Stack trace:
+#0 /var/www/html/woofy/wp-content/themes/kmtheme/login_form.php(74): km_show_error_messages()
+#1 /var/www/html/woofy/wp-includes/template-loader.php(78): include('/var/www/html/w...')
+#2 /var/www/html/woofy/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#3 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#4 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 821
+
+2019-07-16T05:34:20+00:00 CRITICAL Uncaught Error: Call to undefined function km_errors() in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:821
+Stack trace:
+#0 /var/www/html/woofy/wp-content/themes/kmtheme/login_form.php(74): km_show_error_messages()
+#1 /var/www/html/woofy/wp-includes/template-loader.php(78): include('/var/www/html/w...')
+#2 /var/www/html/woofy/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#3 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#4 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 821
+
+2019-07-16T05:34:21+00:00 CRITICAL Uncaught Error: Call to undefined function km_errors() in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:821
+Stack trace:
+#0 /var/www/html/woofy/wp-content/themes/kmtheme/login_form.php(74): km_show_error_messages()
+#1 /var/www/html/woofy/wp-includes/template-loader.php(78): include('/var/www/html/w...')
+#2 /var/www/html/woofy/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#3 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#4 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 821
+
+2019-07-16T05:34:22+00:00 CRITICAL Uncaught Error: Call to undefined function km_errors() in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:821
+Stack trace:
+#0 /var/www/html/woofy/wp-content/themes/kmtheme/login_form.php(74): km_show_error_messages()
+#1 /var/www/html/woofy/wp-includes/template-loader.php(78): include('/var/www/html/w...')
+#2 /var/www/html/woofy/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#3 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#4 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 821
+
+2019-07-16T06:01:40+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:687
+Stack trace:
+#0 /var/www/html/woofy/wp-settings.php(499): include()
+#1 /var/www/html/woofy/wp-config.php(90): require_once('/var/www/html/w...')
+#2 /var/www/html/woofy/wp-load.php(37): require_once('/var/www/html/w...')
+#3 /var/www/html/woofy/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#4 /var/www/html/woofy/index.php(17): require('/var/www/html/w...')
+#5 {main}
+  thrown in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 687
+
+2019-07-16T06:02:09+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_maybe_store_user_agent(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php:718
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): wc_maybe_store_user_agent('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(748): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90): require_onc in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php on line 718
+
+2019-07-16T06:15:57+00:00 CRITICAL syntax error, unexpected ';', expecting ',' or ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 702
+
+2019-07-16T06:20:16+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_maybe_store_user_agent(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php:718
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): wc_maybe_store_user_agent('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(762): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90): require_onc in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php on line 718
+
+2019-07-16T06:20:35+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_maybe_store_user_agent(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php:718
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): wc_maybe_store_user_agent('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(762): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90): require_onc in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php on line 718
+
+2019-07-16T06:20:45+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_maybe_store_user_agent(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php:718
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): wc_maybe_store_user_agent('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(762): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90): require_onc in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php on line 718
+
+2019-07-16T06:23:41+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_user_logged_in(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php:734
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): wc_user_logged_in('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(762): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90): require_once('/var/www/html in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php on line 734
+
+2019-07-16T06:23:46+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_user_logged_in(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php:734
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): wc_user_logged_in('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(762): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90): require_once('/var/www/html in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php on line 734
+
+2019-07-16T06:24:06+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_maybe_store_user_agent(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php:718
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): wc_maybe_store_user_agent('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(762): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90): require_onc in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php on line 718
+
+2019-07-16T06:24:07+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_maybe_store_user_agent(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php:718
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): wc_maybe_store_user_agent('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(762): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90): require_onc in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php on line 718
+
+2019-07-16T06:24:09+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_maybe_store_user_agent(), 1 passed in /var/www/html/woofy/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php:718
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): wc_maybe_store_user_agent('kmadmin')
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(762): do_action('wp_login', 'kmadmin')
+#4 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_login_member('')
+#5 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#7 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#8 /var/www/html/woofy/wp-config.php(90): require_onc in /var/www/html/woofy/wp-content/plugins/woocommerce/includes/wc-user-functions.php on line 718
+
+2019-07-16T09:00:46+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting end of file in /var/www/html/woofy/wp-content/themes/kmtheme/signup_form.php on line 9
+
+2019-07-16T09:01:06+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting end of file in /var/www/html/woofy/wp-content/themes/kmtheme/signup_form.php on line 9
+
+2019-07-16T09:29:11+00:00 CRITICAL Object of class WP_Error could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 948
+
+2019-07-16T09:29:25+00:00 CRITICAL Object of class WP_Error could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 948
+
+2019-07-16T09:29:44+00:00 CRITICAL Object of class WP_Error could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 948
+
+2019-07-16T09:30:56+00:00 CRITICAL Object of class WP_Error could not be converted to string in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 948
+
+2019-07-16T09:33:11+00:00 CRITICAL Uncaught Error: Call to undefined function km_check_unique() in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:979
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_customer_user_id(5)
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-includes/user.php(1854): do_action('user_register', 5)
+#4 /var/www/html/woofy/wp-includes/user.php(2116): wp_insert_user(Array)
+#5 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(947): wp_create_user('test23@yopmail....', '', 'test23@yopmail....')
+#6 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_signup_member('')
+#7 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#9 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#10 /var/www/html/woofy/wp-c in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 979
+
+2019-07-16T09:33:49+00:00 CRITICAL Uncaught Error: Call to undefined function km_check_unique() in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php:980
+Stack trace:
+#0 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_customer_user_id(6)
+#1 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /var/www/html/woofy/wp-includes/user.php(1854): do_action('user_register', 6)
+#4 /var/www/html/woofy/wp-includes/user.php(2116): wp_insert_user(Array)
+#5 /var/www/html/woofy/wp-content/themes/kmtheme/functions.php(948): wp_create_user('test44@yopmail....', '', 'test44@yopmail....')
+#6 /var/www/html/woofy/wp-includes/class-wp-hook.php(286): km_signup_member('')
+#7 /var/www/html/woofy/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /var/www/html/woofy/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#9 /var/www/html/woofy/wp-settings.php(525): do_action('init')
+#10 /var/www/html/woofy/wp-c in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 980
+
+2019-07-16T10:37:43+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:38:43+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:39:43+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:41:43+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:43:43+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:45:43+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:47:43+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:48:40+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:49:02+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:49:04+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:49:04+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:49:21+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:49:22+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:49:22+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:49:22+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:49:27+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T10:49:47+00:00 CRITICAL syntax error, unexpected ''hear_about'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /var/www/html/woofy/wp-content/themes/kmtheme/functions.php on line 960
+
+2019-07-16T11:54:21+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 76
+
+2019-07-16T11:54:22+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 76
+
+2019-07-16T11:55:27+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 76
+
+2019-07-16T11:55:50+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 76
+
+2019-07-16T11:56:03+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 76
+
+2019-07-16T11:56:31+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 76
+
+2019-07-16T11:56:38+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 76
+
+2019-07-16T11:57:40+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /var/www/html/woofy/wp-content/plugins/km-services/templates/display_user_profile_form.php on line 77
+

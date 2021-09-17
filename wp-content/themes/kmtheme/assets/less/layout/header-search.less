@@ -1,0 +1,204 @@
+//
+// Header Search
+// ======================================================
+.header-search-form {
+    float: right;
+    padding-top: 8px;
+    margin-right: @trim-small;
+    .transition(all ease 0.3s);
+    @media only screen and (min-width: @screen-md){
+        position: relative;
+    }
+    @media only screen and (max-width: 1099px){
+        .icon-search-toggle{
+            width: 40px;
+            height: 40px;
+            &:before{
+                line-height: 40px;
+                font-size: @font-size__h5;
+            }
+        }
+    }
+    @media only screen and (max-width:@screen-xlg){
+        margin-right: @element-spacing;
+    }
+    @media only screen and (max-width: @screen-lg){
+        .icon-search-toggle{
+            background-color: transparent;
+            &:before{
+                line-height: 44px;
+                font-size: 20px;
+                color: @secondary--theme_color;
+            }
+            &:hover, &:focus{
+                background-color: transparent;
+            }
+        }
+    }
+    @media only screen and (max-width: 767px){
+        .icon-search-toggle{
+            &:before{
+                line-height: 40px;
+            }
+        }
+    }
+    @media only screen and (max-width:@screen-xs){
+        margin-right: 2px;
+    }
+    div.asl_w .probox, div.asp_w .probox, #ajaxsearchpro4_1 .probox{
+        height: 44px!important;
+        .border--radius(5px)!important;
+        
+        div.proclose{
+            svg{
+                margin-top: 0;
+            }
+        }
+        .promagnifier{
+            width: 44px;
+            height: 44px;
+            background-color: @primary--theme__color;
+            background-image: none;
+            .innericon svg{
+                fill: @color__white;
+                width: 24px;
+            }
+        }
+        .proinput{
+            .border--radius(5px);
+            form{
+                input[type="search"]{
+                    height: 44px;
+                }
+            }
+        }
+    }
+}
+div.asl_r p.showmore {
+    display: none!important;
+}
+
+.search-form {
+    position: relative;
+    input[type="search"]{
+        height: 48px;
+        .border--radius(4px);
+        &:focus{
+            border-color: @primary--theme__color;
+        }
+    }
+    .search-submit {
+        bottom: 0;
+        padding: 0.5em 1.2em;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: @primary--theme__color;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        &:after{
+            content: "\f002";
+            font-family: "Font Awesome 5 pro";
+            font-weight: 100;
+            font-size: @font-size__h5;
+        }
+        &:hover {
+            background-position: -15px -120px;
+        }
+    }
+    label {
+        display: none
+    }
+}
+
+.search-toggle-wrapper {
+    display: none;
+    &.mobile-active {
+        display: block;
+        width: 100%;
+        position: absolute;
+        .box--shadow(0px 0px 2px 2px rgba(0, 0, 0, 0.2));
+        right: 0;
+        top: 94px;
+        background: #f2f2f2;
+        padding: 10px;
+        z-index: 10;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+        }
+        &:before {
+            right: 15px;
+            top: -14px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 15px solid #dadada;
+        }
+        &:after {
+            right: 15px;
+            top: -11px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 15px solid #f2f2f2;
+        }
+        @media only screen and (min-width: @screen-md){
+            width: 400px;
+        }
+        @media only screen and (min-width: @screen-lg){
+            width: 450px;
+        }
+        @media only screen and (max-width: 1099px){
+            top: 74px;
+            &:after, &:before{
+                right: @element-spacing;
+            }
+        }
+        @media only screen and (max-width: 767px){
+            width: 100%;
+            &:after, &:before{
+                display: none;
+            }
+        }
+    }
+}
+
+.icon-search-toggle {
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    float: right;
+    cursor: pointer;
+    background-color: @secondary--theme_color;
+    width: 52px;
+    height: 52px;
+    border-radius: 52px;
+    &:hover, &:focus{
+        background-color: lighten(@secondary--theme_color, 10%);
+    }
+    &:before{
+        color: @color__white;
+        .transition(all ease 0.4s);
+        cursor: pointer;
+        content: "\f002";
+        font-weight: 500;
+        font-family: "Font Awesome 5 pro";
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        line-height: 52px;
+        font-size: 20px;
+    }
+}
+#ajaxsearchprores4_1.vertical .results .item .asp_image, 
+#ajaxsearchprores4_2.vertical .results .item .asp_image, 
+div.asp_r.asp_r_4.vertical .results .item .asp_image{
+    background-position: top;
+}
+#ajaxsearchpro4_1 .probox div.promagnifier div.innericon, 
+#ajaxsearchpro4_2 .probox div.promagnifier div.innericon, 
+div.asp_m.asp_m_4 .probox div.promagnifier div.innericon{
+    width: 44px;
+    height: 44px;
+}

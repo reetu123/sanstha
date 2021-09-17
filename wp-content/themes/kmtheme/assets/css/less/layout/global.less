@@ -1,0 +1,77 @@
+//
+// Layout - Global
+// ======================================================
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff;
+	/* Fallback for when there is no custom background color defined. */
+}
+
+#page {
+	position: relative;
+	word-wrap: break-word;
+}
+
+.wrap {
+	margin-left: auto;
+	margin-right: auto;
+    max-width: @screen-xlg;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.wrap:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.icons-sprite {
+    background-image: url(../images/icons-sprite.png);
+    background-repeat: no-repeat    
+}
+
+@media only screen and (min-width:@screen-md) {
+
+	.has-sidebar:not(.error404) #primary {
+		float: left;
+		width: 72%;
+        padding-right: 21px
+	}
+
+	.has-sidebar #secondary {
+		float: right;
+		padding-top: 0;
+		width: 28%;
+	}
+
+	.error404 #primary {
+		float: none;
+	}
+}
+
+@media only screen and (min-width:@screen-lg) { 
+    .has-sidebar:not(.error404) #primary {
+width: 76%;
+    }
+    .has-sidebar #secondary { 
+    max-width: 307px;
+        width: 24%
+    }
+}
+

@@ -1,0 +1,68 @@
+// ==============================================
+// Core Application
+// ==============================================
+
+// ----------------------------------------------
+// Browser Resets
+
+@import "core/normalize";
+@import "core/reset";
+
+// ----------------------------------------------
+// Core
+
+@import "core/common";
+
+// ----------------------------------------------
+// Lib
+
+
+@import "lib/typography";
+@import "lib/forms";
+@import "lib/tables";
+@import "lib/buttons";
+@import "lib/messages";
+
+// ----------------------------------------------
+// Layout
+
+@import "layout/global";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/header-search";
+@import "layout/footer";
+
+// ----------------------------------------------
+// Modules
+
+// The sort order here is important for two reasons:
+//  1. The compiled CSS needs to be logically ordered/grouped (NOT alphabetically ordered)
+//  2. Selectors of equal weight get applied based on which appears last in the stylesheet,
+//     so we should try not to change this order once it is in place
+
+@import "module/posts";
+@import "module/pages";
+@import "module/error-page";
+@import "module/comments";
+@import "module/widgets";
+@import "module/media";
+@import "module/galleries";
+@import "module/customizer";
+@import "module/carousel";
+@import "module/accordion";
+@import "module/svgs-fallbacks";
+@import "content/home";
+@import "module/about-us";
+@import "module/contact-us";
+@import "module/leadership";
+@import "module/search-result";
+
+
+// ----------------------------------------------
+// Override
+@import "override/plugin";
+
+
+// ----------------------------------------------
+// Print
+@import "module/print";

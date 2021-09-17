@@ -1,0 +1,255 @@
+// 
+// Accessibility
+// ======================================================
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+// 
+// Alignments
+// ======================================================
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// 
+// Clearings
+// ======================================================
+.clear:before,
+.clear:after,
+.home-accordion-wrap:before,
+.home-accordion-wrap:after,
+.home-accordion-wrap nav.home-navigation ul li a:before,
+.home-accordion-wrap nav.home-navigation ul li a:after,
+.accordion-wrap:before,
+.accordion-wrap:after,
+.entry-content:before,
+.entry-content:after,
+.entry-content .readmore:before,
+.entry-content .readmore:after,
+.entry-footer:before,
+.entry-footer:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after,
+.nav-links:before,
+.nav-links:after,
+.pagination:before,
+.pagination:after,
+.comment-author:before,
+.comment-author:after,
+.widget-area:before,
+.widget-area:after,
+.widget:before,
+.widget:after,
+.comment-meta:before,
+.comment-meta:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+
+.clear:after,
+.home-accordion-wrap:after,
+.home-accordion-wrap nav.home-navigation ul li a:after,
+.accordion-wrap:after,
+.entry-content:after,
+.entry-footer:after,
+.entry-content .readmore:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after,
+.nav-links:after,
+.pagination:after,
+.comment-author:after,
+.widget-area:after,
+.widget:after,
+.comment-meta:after {
+    clear: both;
+}
+
+// 
+// Formatting
+// ======================================================
+hr {
+    background-color: #bbb;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
+}
+
+// 
+// Lists
+// ======================================================
+ul,
+ol {
+    margin: 0 0 1.5em;
+    padding: 0;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li>ul,
+li>ol {
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin: 0 1.5em 1.5em;
+}
+
+// 
+// Regular Content
+// ======================================================
+.site-content-contain {
+    background-color: #fff;
+    position: relative;
+}
+
+.site-content {
+    padding: 12px 0 20px;
+}
+
+.show-desktop-7,
+.show-desktop-9 {
+    display: none
+}
+
+.widget_kmsp_advertisement {text-align: center;
+    img {display:block;width: 100%;
+        &:hover {opacity: 0.9;
+        filter: alpha(opacity=90)}
+    }
+    
+}
+
+// Heading Common Pattern
+.heading-pattern-common{
+    background-image: url(../images/pattern-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: @box-spacing;
+    color: @color__white;
+    font-weight: @font-weight__regular;
+}
+
+// social share buttons
+.simplesocialbuttons.simplesocial-round-icon.simplesocialbuttons_inline{
+    button{
+        border: none;
+        height: auto;
+        color: @color__white !important;
+        line-height: normal;
+        background: none;
+        &:after {
+            width: auto;
+            height: auto;
+            line-height: normal;
+        }
+        &:hover, &:focus{
+            background: none !important;
+            color: @primary--theme__color !important;
+        }
+    }
+}
+
+//
+// mobile 
+// ======================================================
+@media only screen and (min-width: @screen-xs) and (max-width: (@screen-md - 1)) {
+    .widget_kmsp_advertisement {
+        width: 50%;
+        padding-right: 10px;
+        float: left;
+        img {
+            display: inline-block;
+            width: 100%;
+        }
+        + .widget_kmsp_advertisement {padding-right: 0;padding-left: 10px}
+    }
+}
+
+@media only screen and (min-width:@screen-md) {
+    .visible-mobile-7 {
+        display: none
+    }
+    .show-desktop-7 {
+        display: block
+    }
+}
+
+//
+// Desktop 
+// ======================================================
+@media only screen and (min-width:@screen-lg) {
+    .visible-mobile-9 {
+        display: none
+    }
+    .show-desktop-9 {
+        display: block
+    }
+}
