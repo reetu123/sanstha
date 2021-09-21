@@ -489,6 +489,40 @@ dd {
     display: block;
   }
 }
+.community-box-wrapper {
+  margin-top: 100px;
+  margin-bottom: 5px;
+}
+.community-box-wrapper .row {
+  display: flex;
+}
+.community-box-wrapper .row > div {
+  padding: 0 30px;
+  margin-bottom: 35px;
+}
+.community-box-wrapper .row .click-card-wrapper {
+  border: 1px solid #fa4a70;
+  background: #fff;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 0 30px #ccc;
+}
+.community-box-wrapper .row .click-card-wrapper .click-card a {
+  background: #fa4a70;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 50px 15px;
+  margin-bottom: 35px;
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: -100px;
+  color: #fff;
+}
+.community-box-wrapper .row .click-card-wrapper .click-card a:hover {
+  background: #000;
+  color: #fff;
+}
 @font-face {
   font-family: 'HelveticaNeue';
   src: url('../fonts/helvetican-light/HelveticaNeueLight.eot');

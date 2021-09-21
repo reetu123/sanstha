@@ -253,3 +253,38 @@ dd {
         display: block
     }
 }
+
+.community-box-wrapper{
+    margin-top: 100px;
+    margin-bottom: 5px;
+    .row{
+        display: flex;
+        >div{
+            padding: 0 30px;
+            margin-bottom: 35px;
+        }
+        .click-card-wrapper{
+            border: 1px solid @primary--theme__color;
+            background: #fff;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 0 30px #ccc;
+            .click-card a{
+                background: @primary--theme__color;
+                max-width: 350px;
+                margin: 0 auto;
+                padding: 50px 15px;
+                margin-bottom: 35px;
+                display: block;
+                text-decoration: none;
+                font-size: 22px;
+                margin-top: -100px;
+                color: #fff;
+                &:hover{
+                    background: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
