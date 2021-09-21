@@ -17,19 +17,14 @@ class Vc_Updater {
 	/**
 	 * @var string
 	 */
-	protected $version_url = 'http://updates.wpbakery.com/';
+	protected $version_url = 'https://updates.wpbakery.com/';
 
 	/**
 	 * Proxy URL that returns real download link
 	 *
 	 * @var string
 	 */
-	protected $download_link_url = 'http://support.wpbakery.com/updates/download-link';
-
-	/**
-	 * @var string
-	 */
-	public $title = 'WPBakery Page Builder';
+	protected $download_link_url = 'https://support.wpbakery.com/updates/download-link';
 
 	/**
 	 * @var bool
@@ -130,7 +125,8 @@ class Vc_Updater {
 	 */
 	public function preUpgradeFilter( $reply, $package, $updater ) {
 		$condition1 = isset( $updater->skin->plugin ) && vc_plugin_name() === $updater->skin->plugin;
-		$condition2 = isset( $updater->skin->plugin_info ) && $updater->skin->plugin_info['Name'] === $this->title;
+		// Must use I18N otherwise France or other languages will not work
+		$condition2 = isset( $updater->skin->plugin_info ) && __( 'WPBakery Page Builder', 'js_composer' ) === $updater->skin->plugin_info['Name'];
 		if ( ! $condition1 && ! $condition2 ) {
 			return $reply;
 		}

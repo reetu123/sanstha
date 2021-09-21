@@ -157,12 +157,12 @@ do_action('login_init');
         <?php htmlspecialchars(dynamic_sidebar('become-a-member')); ?>
     </aside><!-- #secondary -->
 <?php endif;
-if (is_active_sidebar('become-a-tasker')) : ?>
+/* if (is_active_sidebar('become-a-tasker')) : ?>
     <aside id="secondary" class="widget-area" role="complementary"
     aria-label="<?php esc_attr_e('Blog Sidebar', 'twentyseventeen'); ?>">
     <?php dynamic_sidebar('become-a-tasker'); ?>
 </aside><!-- #secondary -->
-<?php endif; ?>
+<?php endif;*/  ?>
 </div>
 <?php
 } ?>

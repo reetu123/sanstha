@@ -4,6 +4,8 @@ class kmlist
 {
     public function __construct()
     {
+
+        
         $this->add_shortcode('services', array($this, 'km_services'));
         $this->add_shortcode('user_profile', array($this, 'km_user_profile'));
         $this->add_shortcode('subscriber_profile', array($this, 'km_subscriber_profile'));
@@ -32,36 +34,43 @@ class kmlist
 
     /* services listing start */
     public function km_services()
-    {
-        $res = '';
-        $res .= '<div class="service-wrapper">';
-        $args = array(
-            'post_type' => 'km-services',
-            'posts_per_page' => -1,
-            'order' => 'ASC',
-            'post_status' => 'publish'
-        );
-        $services_query = new WP_Query($args);
+    { ?>
+        <div class="wrap">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
 
-        if ($services_query->have_posts()) {
-            $i = 0;
-            while ($services_query->have_posts()): $services_query->the_post();
-                global $post;
-                $slug = $post->post_name;
-                $thumbnailID = get_post_thumbnail_id(get_the_ID());
-                $serviceSRC = wp_get_attachment_image_url($thumbnailID, 'full', false);
-                $res .= '<div class="service-cols-wrap">';
-                $res .= '<div class="service-cols service_' . $i . '"><a href="' . site_url() . '/search-tasker/?service=' . $slug . '">';
-                $res .= '<div class="services-img-wrapper" style="background-image: url(' . $serviceSRC . ');"></div>';
-                $res .= '<div class="service-container">';
-                $res .= '<h4 class="title">' . get_the_title() . '</h4>';
-                $res .= '</div></a></div></div>';
-                $i++;
-            endwhile;
-        }
-        $res .= '</div>';
-        return $res;
-        wp_reset_postdata();
+        <div class="community-box-wrapper">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="click-card-wrapper">
+                    <div class="click-card">
+                    <a class="sanstha-anchor" href="/login.php?sanstha_id=1">Aggrawal Jaipur Sanstha </a>
+                    </div>
+                    <div class="click-card-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Contemnit enim disserendi elegantiam, confuse loquitur. Ergo id est convenienter naturae vivere, a natura discedere. Quid igitur dubitamus in tota eius natura quaerere quid sit effectum? Quae cum essent dicta, discessimus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+            <div class="click-card-wrapper">
+                    <div class="click-card">
+                    <a class="sanstha-anchor" href="/login.php?sanstha_id=2">Varvadhu Milaan Sanstha </a>
+                    </div>
+                    <div class="click-card-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Contemnit enim disserendi elegantiam, confuse loquitur. Ergo id est convenienter naturae vivere, a natura discedere. Quid igitur dubitamus in tota eius natura quaerere quid sit effectum? Quae cum essent dicta, discessimus.</p>
+                    </div>
+                </div>
+</div> 
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</main>
+            </div>
+        </div>
+        <?php 
     }
     /* services listing end */
 
