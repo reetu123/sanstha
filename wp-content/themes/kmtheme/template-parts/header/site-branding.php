@@ -64,23 +64,23 @@
     $class = ($url == 'edit-profile') ? 'active' :'';
       $li='<li class="'.$class.'"><a class="settings-i" href="'.site_url().'/edit-profile/">My Profile</a></li>';
   }
-  if ( !in_array( 'tasker', (array) $user->roles ) ) {
+  // if ( !in_array( 'tasker', (array) $user->roles ) ) {
 
-      $class = ($url == 'membership-account') ? 'active' :'';
-      $liPlan = '<li class="'.$class.'"><a class="plan-i" href="'.site_url().'/membership-account/">My Plan</a></li>';
-      $classContact = ($url == 'tasker-contact') ? 'active' :'';
-      $liTaskerContact = '<li class="'.$classContact.'"><a class="tasker-i" href="'.site_url().'/tasker-contact/">Tasker Contact</a></li>';
-  }else{
-      $liPlan = $liTaskerContact ='';
-  }
+  //     $class = ($url == 'membership-account') ? 'active' :'';
+  //     $liPlan = '<li class="'.$class.'"><a class="plan-i" href="'.site_url().'/membership-account/">My Plan</a></li>';
+  //     $classContact = ($url == 'tasker-contact') ? 'active' :'';
+  //     $liTaskerContact = '<li class="'.$classContact.'"><a class="tasker-i" href="'.site_url().'/tasker-contact/"></a></li>';
+  // }else{
+  //     $liPlan = $liTaskerContact ='';
+  // }
 
   echo '<div class="my_Account_nav"><a href="javascript:void(0);" class="button toggler"><i class="fas fa-user-circle"></i> <span>My Account</span> <i class="far fa-angle-down"></i></a>
   <ul class="my_Account_subnav toggle_wrap">
 
   <li class="wooffy-title">'.$img." ".ucwords(get_user_meta($user_id,'first_name',true)).'</li>'.$li.'
-  <li class="'.$classPassword.'"><a class="pw-i" href="'.site_url().'/change-password/">Change Password</a></li>'.$liPlan.$liTaskerContact.'
-  <li class="'.$classReviews.'"><a class="reviews-i" href="'.site_url().'/my-reviews/">My Reviews</a></li>
-  <li><a class="log-i" href="'.site_url().'/wp-login.php?action=logout">Sign Out</a></li>
+  <li class="'.$classPassword.'"><a class="pw-i" href="'.site_url().'/change-password/">Change Password</a></li>'.$liPlan.$liTaskerContact;
+  // echo '<li class="'.$classReviews.'"><a class="reviews-i" href="'.site_url().'/my-reviews/">My Reviews</a></li>';
+  echo '<li><a class="log-i" href="'.site_url().'/wp-login.php?action=logout">Sign Out</a></li>
   </ul>
   </div>';
 
