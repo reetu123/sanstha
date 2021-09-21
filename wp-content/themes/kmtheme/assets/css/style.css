@@ -456,7 +456,7 @@ dd {
 .simplesocialbuttons.simplesocial-round-icon.simplesocialbuttons_inline button:hover,
 .simplesocialbuttons.simplesocial-round-icon.simplesocialbuttons_inline button:focus {
   background: none !important;
-  color: #f26b65 !important;
+  color: #fa4a70 !important;
 }
 @media only screen and (min-width: 479px) and (max-width: 767px) {
   .widget_kmsp_advertisement {
@@ -571,12 +571,12 @@ h2,
   font-weight: 700;
 }
 h3 {
-  color: #2b345a;
+  color: #fa4a70;
   font-weight: 400;
   text-transform: uppercase;
 }
 h4 {
-  color: #2b345a;
+  color: #fa4a70;
   font-weight: 700;
   letter-spacing: 0;
 }
@@ -1053,7 +1053,7 @@ input[type="checkbox"] + label {
 button,
 input[type="button"],
 input[type="submit"] {
-  background-color: #f26b65;
+  background-color: #fa4a70;
   border: 0;
   -webkit-border-radius: 2px;
   border-radius: 0px;
@@ -1185,7 +1185,7 @@ a:focus {
 }
 a:hover,
 a:active {
-  color: #f26b65;
+  color: #fa4a70;
   outline: 0;
 }
 .pmpro_advanced_levels-div .pmpro_level .pmpro_level-select .pmpro_btn-select {
@@ -1197,7 +1197,7 @@ a:active {
   overflow: hidden;
   padding: 11px 22px;
   color: #ffffff;
-  background: #f26b65;
+  background: #fa4a70;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1205,7 +1205,7 @@ a:active {
   -webkit-border-radius: 4px;
   -ms-border-radius: 4px;
   -moz-border-radius: 4px;
-  border: 2px solid #f26b65;
+  border: 2px solid #fa4a70;
   display: inline-block;
   vertical-align: middle;
   -webkit-transition: all 0.3s ease;
@@ -1213,10 +1213,11 @@ a:active {
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border-radius: 0;
 }
 .button:hover,
 .pmpro_advanced_levels-div .pmpro_level-select .pmpro_btn-select:hover {
-  background: #f0544d;
+  background: #f9315c;
   color: #ffffff;
 }
 .button.primary-button,
@@ -1568,7 +1569,7 @@ h5 {
   color: #ffffff;
 }
 .site-header .topbar-msgbar .widget p a:hover {
-  color: #f26b65;
+  color: #fa4a70;
 }
 .site-header .topbar-msgbar .icon-top-toggle {
   display: none;
@@ -1585,7 +1586,7 @@ h5 {
   -moz-border-radius: 0 0 4px 4px;
   background-image: url(../images/icons-sprite.png);
   background-repeat: no-repeat;
-  background-color: #f26b65;
+  background-color: #fa4a70;
   background-position: -17px -154px;
   z-index: 103;
   cursor: pointer;
@@ -1965,7 +1966,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
   }
   .head-right-wrap > .button:hover,
   .head-right-wrap > .buttonfocus {
-    color: #f26b65;
+    color: #fa4a70;
     background: none;
     border: none;
   }
@@ -1992,7 +1993,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
   padding: 0;
 }
 .have-fdbk a {
-  color: #f26b65;
+  color: #fa4a70;
 }
 .accss-top {
   clear: both;
@@ -2368,7 +2369,7 @@ video {
 .wsmenu-list > li:hover a,
 .wsmenu-list > li.active a,
 .wsmenu-list > li:focus a {
-  color: #f26b65;
+  color: #fa4a70;
 }
 .wsmenu-list li:first-child a {
   -webkit-border-radius: 2px 2px 2px 2px;
@@ -3423,7 +3424,7 @@ video {
     position: static;
   }
   .wsmenu > .wsmenu-list > li.active > a {
-    color: #f26b65;
+    color: #fa4a70;
   }
   .wsmenu > .wsmenu-list > li > a > .fa {
     font-size: 16px;
@@ -3622,7 +3623,7 @@ video {
     cursor: pointer;
     height: 3px;
     width: 24px;
-    background: #f26b65;
+    background: #fa4a70;
     position: absolute;
     display: block;
     content: '';
@@ -3802,7 +3803,7 @@ video {
 .header-search-form #ajaxsearchpro4_1 .probox .promagnifier {
   width: 44px;
   height: 44px;
-  background-color: #f26b65;
+  background-color: #fa4a70;
   background-image: none;
 }
 .header-search-form div.asl_w .probox .promagnifier .innericon svg,
@@ -3838,7 +3839,7 @@ div.asl_r p.showmore {
   -moz-border-radius: 4px;
 }
 .search-form input[type="search"]:focus {
-  border-color: #f26b65;
+  border-color: #fa4a70;
 }
 .search-form .search-submit {
   bottom: 0;
@@ -3846,7 +3847,7 @@ div.asl_r p.showmore {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: #f26b65;
+  background-color: #fa4a70;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -4529,14 +4530,14 @@ body:not(.kmtheme-front-page) .entry-header {
   text-align: center;
 }
 #pmpro_cancel .pmpro_actionlinks .pmpro_btn.pmpro_yeslink {
-  background: #f26b65;
-  border: 2px solid #f26b65;
+  background: #fa4a70;
+  border: 2px solid #fa4a70;
   color: #ffffff;
 }
 #pmpro_cancel .pmpro_actionlinks .pmpro_btn.pmpro_yeslink:hover,
 #pmpro_cancel .pmpro_actionlinks .pmpro_btn.pmpro_yeslink:focus {
-  border: 2px solid #f26b65;
-  background: #f0544d;
+  border: 2px solid #fa4a70;
+  background: #f9315c;
 }
 #pmpro_cancel .pmpro_actionlinks .pmpro_nolink {
   color: #2b345a;
@@ -4654,11 +4655,11 @@ body:not(.kmtheme-front-page) .entry-header {
 }
 .pricing-wrap-col.two,
 .pmpro_level > .post.two {
-  border-top-color: #f26b65;
+  border-top-color: #fa4a70;
 }
 .pricing-wrap-col.two .sale-price,
 .pmpro_level > .post.two .sale-price {
-  color: #f26b65;
+  color: #fa4a70;
 }
 .pricing-wrap-col.three,
 .pmpro_level > .post.three {
@@ -4722,7 +4723,7 @@ body:not(.kmtheme-front-page) .entry-header {
   margin-bottom: 20px;
 }
 .login-wrap .login-form-inner .ftxt .check a {
-  color: #f26b65;
+  color: #fa4a70;
   text-decoration: underline;
 }
 .login-wrap .login-form-inner .ftxt .check a:hover {
@@ -4739,7 +4740,7 @@ body:not(.kmtheme-front-page) .entry-header {
   color: #000000;
 }
 .login-wrap .login-form-inner .fbtn span a {
-  color: #f26b65;
+  color: #fa4a70;
   text-decoration: underline;
 }
 .login-wrap .login-form-inner .fbtn span a:hover {
@@ -4815,9 +4816,10 @@ body:not(.kmtheme-front-page) .entry-header {
 }
 input[type="button"],
 input[type="submit"] {
-  background-color: #f26b65;
+  background-color: #fa4a70;
   color: #ffffff;
   font-weight: 400;
+  border-radius: 0 !important;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -4827,7 +4829,7 @@ input[type="submit"] {
 }
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  background-color: #f0544d;
+  background-color: #f9315c;
 }
 .pippin_errors {
   text-align: center;
@@ -4842,7 +4844,7 @@ input[type="submit"]:hover {
   background: none;
   border: none;
   padding: 11px;
-  color: #f26b65;
+  color: #fa4a70;
 }
 .my_Account_nav > .button > i {
   font-size: 13px;
@@ -4959,7 +4961,7 @@ input[type="submit"]:hover {
 }
 .my_Account_nav .my_Account_subnav li:hover a,
 .my_Account_nav .my_Account_subnav li.active a {
-  color: #f26b65;
+  color: #fa4a70;
 }
 @media only screen and (max-width: 1099px) {
   .my_Account_nav .my_Account_subnav {
@@ -5004,7 +5006,7 @@ input[type="submit"]:hover {
   padding-top: 20px;
 }
 .lost-password-wrap .fbtn input[type="submit"] {
-  background: #f26b65;
+  background: #fa4a70;
   padding: 12px 20px;
   font-size: 16px;
   color: #ffffff;
@@ -5241,7 +5243,7 @@ select.error {
 }
 .form-profile fieldset .form-row .check input[type="checkbox"]:checked + label:before,
 .form-profile fieldset .form-row .check-cls input[type="checkbox"]:checked + label:before {
-  background-color: #f26b65;
+  background-color: #fa4a70;
   border-color: transparent;
   content: "\f00c";
   border-radius: 4px;
@@ -5283,7 +5285,7 @@ select.error {
 }
 .form-profile fieldset .form-row .check label a,
 .form-profile fieldset .form-row .check-cls label a {
-  color: #f26b65;
+  color: #fa4a70;
   text-decoration: underline;
 }
 .form-profile fieldset .form-row .check label a:hover,
@@ -5523,7 +5525,7 @@ select.error {
   }
 }
 .form-profile fieldset .form-row .serve_area_append_wrapper .serve_area_wrapper_child .remove {
-  color: #f26b65;
+  color: #fa4a70;
 }
 .form-profile fieldset .form-row .serve_area_append_wrapper .serve_area_wrapper_child .remove:hover {
   color: #2b345a;
@@ -5531,7 +5533,7 @@ select.error {
 .entry-content table thead th {
   font-size: 18px;
   text-align: center;
-  background-color: #f26b65;
+  background-color: #fa4a70;
   color: #ffffff;
   padding: 10px;
   border-right: 1px solid #e1e1e1;
@@ -5645,14 +5647,14 @@ form.pmpro_form {
 }
 form.pmpro_form .sale-price {
   font-size: 20px;
-  color: #f26b65;
+  color: #fa4a70;
 }
 form.pmpro_form .regular-price {
   text-decoration: line-through;
 }
 form.pmpro_form .pmpro_alert.pmpro_message {
-  background-color: #f26b65;
-  border-color: #f26b65;
+  background-color: #fa4a70;
+  border-color: #fa4a70;
   color: #ffffff;
 }
 form.pmpro_form .pmpro_alert.pmpro_message a {
@@ -5847,10 +5849,10 @@ div[id*="ajaxsearchliteres"].wpdreams_asl_results .results div.asl_image {
     padding-left: 5px;
   }
   .login-wrap {
-    width: 70%;
+    width: 50%;
   }
   .sidebar {
-    width: 30%;
+    width: 50%;
   }
 }
 @media only screen and (min-width: 1290px) {
@@ -6922,7 +6924,7 @@ p > object:only-child {
 }
 .tasker-slider .slider .slick-slide h4 {
   font-size: 20px;
-  color: #000000;
+  color: 'Noto Sans', sans-serif;
   padding-bottom: 4px;
   font-weight: 400;
 }
@@ -7435,7 +7437,7 @@ p > object:only-child {
   position: relative;
   width: 126px;
   height: 126px;
-  border: 5px solid #f26b65;
+  border: 5px solid #fa4a70;
   border-radius: 150px;
   text-align: center;
   display: inline-block;
@@ -7472,7 +7474,7 @@ p > object:only-child {
   display: none;
 }
 .howit-works-sec .list-howitworks:hover .list-icon {
-  background: #f26b65;
+  background: #fa4a70;
 }
 .howit-works-sec .list-howitworks:hover .list-icon img {
   transform: scale(1.2);
@@ -7506,7 +7508,7 @@ ul.common li {
 }
 ul.common li:before {
   content: "\2022";
-  color: #f26b65;
+  color: #fa4a70;
   font-weight: bold;
   font-size: 25px;
   position: absolute;
@@ -7564,7 +7566,7 @@ ul.common li:before {
 }
 .count-wrap {
   text-align: center;
-  color: #f26b65;
+  color: #fa4a70;
   font-size: 25px;
   font-weight: 700;
   padding-top: 20px;
@@ -7598,7 +7600,7 @@ ul.common li:before {
 .about-history-wrap h4.liner:after {
   position: absolute;
   content: "";
-  background-color: #f26b65;
+  background-color: #fa4a70;
   height: 3px;
   width: 180px;
   bottom: 0;
@@ -7729,7 +7731,7 @@ ul.common li:before {
   display: block;
   pointer-events: none;
   line-height: 1.2;
-  color: #f26b65;
+  color: #fa4a70;
   z-index: 90;
 }
 .gform_wrapper .top_label li.gfield .ginput_container_fileupload:before {
@@ -7782,7 +7784,7 @@ ul.common li:before {
   padding: 15px 30px !important;
 }
 .gform_wrapper .gform_footer input[type="submit"]:hover {
-  background-color: #f0544d;
+  background-color: #f9315c;
 }
 .contact-form .gform_wrapper {
   margin-top: 40px;
@@ -7802,7 +7804,7 @@ ul.common li:before {
   position: absolute;
   content: "";
   font-family: "Font Awesome 5 pro";
-  color: #f26b65;
+  color: #fa4a70;
   left: 0;
   top: 0;
   font-size: 20px;
@@ -7870,7 +7872,7 @@ ul.common li:before {
   margin-bottom: 20px;
 }
 .leadership-wrap .leadership .entry-content .read-full-post {
-  color: #f26b65;
+  color: #fa4a70;
   text-decoration: underline;
   position: relative;
 }
@@ -8081,7 +8083,7 @@ ul.common li:before {
   line-height: 1.2;
   margin-bottom: 0;
   font-size: 40px;
-  color: #f26b65;
+  color: #fa4a70;
 }
 .users-main-section .users-main-wrap .user-details .user-inner-head .price-sec label sup {
   font-size: 60%;
@@ -8100,7 +8102,7 @@ ul.common li:before {
   font-weight: 700;
   clear: none;
   font-size: 16px;
-  color: #000000;
+  color: #fa4a70;
 }
 @media only screen and (max-width: 767px) {
   .users-main-section .users-main-wrap .user-details .user-inner-body h5 {
@@ -8248,7 +8250,7 @@ ul.common li:before {
   vertical-align: middle;
 }
 .user-view-profile-wrap .user-view-wrap-left .services_list .list-for-services span.s-price b {
-  color: #f26b65;
+  color: #fa4a70;
   margin-right: 7px;
 }
 @media only screen and (max-width: 767px) {
@@ -8258,7 +8260,7 @@ ul.common li:before {
   }
 }
 .user-view-profile-wrap .user-view-wrap-right .user-details p a {
-  color: #f26b65;
+  color: #fa4a70;
 }
 .user-view-profile-wrap .user-view-wrap-right .user-details h3,
 .user-view-profile-wrap .user-view-wrap-right .user-details h4 {
@@ -8292,11 +8294,11 @@ ul.common li:before {
   margin-bottom: 15px;
 }
 .user-view-profile-wrap .user-view-wrap-right .user-details .email-info {
-  color: #f26b65;
+  color: #fa4a70;
 }
 .user-view-profile-wrap .user-view-wrap-right .user-details .email-info a {
   text-decoration: underline;
-  color: #f26b65;
+  color: #fa4a70;
 }
 .user-view-profile-wrap .user-view-wrap-right .user-details .email-info a:hover {
   text-decoration: none;

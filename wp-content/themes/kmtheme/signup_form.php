@@ -66,33 +66,275 @@ get_header();
                             <form method="post" id="signupform" name="signupform">
                                 <input type="hidden" name="login_user_id" value="<?php echo $user_id ?>">
                                 <div class="ftxt">
-                                    <label><?php _e('First Name', ''); ?><span class="asterisk">*</span> </label>
-                                    <input type="text" tabindex="10" size="20" class="input" id="first_name"
-                                    name="first_name" value="<?php echo @$user_first_name ?>"/>
+                                    <?php _e('First Name', ''); ?><span class="asterisk">*</span> </label>
+                                    <input type="text" class="form-control" placeholder="Name" name="created_by" id="created_by" required>
+                                    <!--<input type="text" tabindex="10" size="20" class="input" id="first_name"
+                                    name="first_name" value="<?php echo @$user_first_name ?>"/> -->
                                 </div>
                                 <div class="ftxt">
-                                    <label><?php _e('Last Name', ''); ?> <span class="asterisk">*</span></label>
-                                    <input type="text" tabindex="20" size="20"
-                                    value="<?php echo @$user_last_name ?>" class="input" id="last_name"
-                                    name="last_name"/>
+                                    <label>Relation</label>
+                                        <select name="relation" id="relation">
+                                        <option value="self">Self</option>
+                                        <option value="parents">Parents</option>
+                                        <option value="siblings">Siblings</option>
+                                        <option value="relatives">Relatives</option>
+                                        <option value="friend">Friend</option>
+                                    </select>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Are You</label>
+                                    <input type="radio" id="nri" name="nation" value="NRI"><span>NRI</span>
+                                    <input type="radio" id="indian" name="nation" value="Indian"><span>Indian</span>
+                                </div>
+                                <h4>Personal Information</h4>
+                                <div class="ftxt">
+                                    <label>Gender</label>
+                                        <input type="radio" id="male" name="gender" value="Male" required><span>Male</span>
+                                        <input type="radio" id="female" name="gender" value="Female"><span>Female</span>
                                 </div>
                                 <div class="ftxt half">
-                                    <label><?php _e('Phone No.', ''); ?></label>
-                                    <input type="text" name="user_phone" tabindex="20" size="20"
-                                    value="<?php echo @$user_phone ?>" class="input" id="user_phone"/>
+                                    <label>Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Last Name" name="last_name" id="last_Name">
                                 </div>
-                                <!-- <div class="ftxt half">
-                                    <label><?php _e('Mobile No.', ''); ?><span class="asterisk">*</span></label>
-                                    <input type="text" name="user_mobile" tabindex="20" size="20"
-                                    value="<?php echo @$user_mobile ?>" class="input" id="user_mobile"/>
-                                </div> -->
                                 <div class="ftxt half">
-                                    <label><?php _e('Email', ''); ?><span class="asterisk">*</span> </label>
-                                    <input type="email" tabindex="20" size="20" value="<?php echo @$user_email ?>"
-                                    class="input <?php echo is_user_logged_in() ? 'disabled' : '' ?>"
-                                    id="email" <?php echo is_user_logged_in() ? 'readonly' : '' ?>
-                                    name="email"/>
+                                    <label>First Name</label>
+                                    <input type="text" class="form-control" placeholder="First Name" name="first_name" id="first_Name" required>
                                 </div>
+                                <div class="ftxt">
+                                    <label>Age</label>
+                                    <input type="Number" class="form-control" placeholder="Age" name="age" id="age" required>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Complextion</label>
+                                    <input type="text" class="form-control" placeholder="Complextion" name="complextion" id="complextion">
+                                </div>
+                                <div class="ftxt">
+                                    <label>Height(feets & inches)</label>
+                                    <input type="Number" class="form-control" placeholder="Feet" name="h_feet" id="feet">
+                                    <input type="Number" class="form-control" placeholder="Inch" name="h_inches" id="inches">
+                                </div>
+                                <div class="ftxt">
+                                    <label>Weight</label>
+                                    <input type="Number" class="form-control" placeholder="Weight" name="weight" id="weight">kg
+                                </div>
+                                <h4>Religion & Social Background</h2>
+                                <div class="ftxt">
+                                    <label>Weight</label>
+                                    <input type="Number" class="form-control" placeholder="Weight" name="weight" id="weight">kg
+                                </div>
+                                <div class="ftxt">
+                                    <label>Religion</label>
+                                    <input type="text" class="form-control" placeholder="Religion" name="religion" id="religion" required>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Caste </label>
+                                    <input type="text" class="form-control" placeholder="Caste " name="caste" id="caste" required>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Sub caste</label>
+                                    <input type="text" class="form-control" placeholder="Sub caste" name="sub_caste" id="sub_caste">
+                                </div>
+                                <div class="ftxt">
+                                    <label>Gotra </label>
+                                    <input type="text" class="form-control" placeholder="Gotra" name="gotra" id="gotra">
+                                </div>
+                                <div class="ftxt">
+                                    <label>Marital Status</label>
+                                        <select name="marital" id="marital">
+                                        <option value="unmarried">Unmarried</option>
+                                        <option value="divorcee">Divorcee</option>
+                                        <option value="widow">Widow</option>
+                                    </select>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Child (If any)</label>
+                                    <input type="Number" class="form-control" placeholder="Child(If any)" name="child" id="child">
+                                </div>
+                                <div class="ftxt">
+                                    <label>Personal Values</label>
+                                    <textarea name="personal_values" required></textarea>
+                                </div>
+                                <h5>BASICS & LIFESTYLE </h5>
+                                <div class="ftxt">
+                                    <label>Mother Tongue</label>
+                                    <select name="mothertongue" id="mothertongue">
+                                        <option value="english">English</option>
+                                        <option value="hindi">Hindi</option>
+                                        <option value="punjabi">Punjabi</option>
+                                        </select>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Blood Group</label>
+                                    <select name="bloodgroup" id="bloodgroup">
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                    </select>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Smoke</label>
+                                    <input type="radio" id="s_yes" name="smoke" value="s_yes" required><span>Yes</span>
+                                    <input type="radio" id="s_no" name="smoke" value="s_no"><span>No</span>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Drink</label>
+                                    <input type="radio" id="d_yes" name="drink" value="d_yes" required><span>Yes</span>
+                                    <input type="radio" id="d_no" name="drink" value="d_no"><span>No</span>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Diet</label>
+                                    <input type="radio" id="dt_yes" name="diet" value="dt_yes" required><span>Yes</span>
+                                    <input type="radio" id="dt_no" name="diet" value="dt_no"><span>No</span>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Body Type</label>
+                                    <select name="bodytype" id="bodytype">
+                                    <option value="slim+">Slim</option>
+                                    <option value="fat">Fat</option>
+                                    </select>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Physical Status</label>
+                                    <input type="text" class="form-control" placeholder="Physical Status" name="physicalstatus" id="physicalstatus">
+                                </div>
+                                <h5>EDUCATION & PROFESSION</h5>
+                                <div class="ftxt">
+                                    <label>Educational Qualification</label>
+                                    <input type="text" class="form-control" placeholder="Educational Qualification" name="qualification" id="qualification required">
+                                </div>
+                                <div class="ftxt">
+                                    <label>Occupation/Profession Details</label>
+                                    <input type="text" class="form-control" placeholder="Occupation/Profession Details" name="occupation" id="occupation" required>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Income </label>
+                                    <input type="text" class="form-control" placeholder="Income" name="income" id="income" required>
+                                </div>
+                                <h4>FAMILY DETAILS</h4>
+                                <div class="ftxt">
+                                    <label>Father’s Name</label>
+                                    <input type="text" class="form-control" placeholder="Father’s Name" name="fathername" id="fathername">
+                                </div>
+                                <div class="ftxt">
+                                    <label>Father’s Occupation</label>
+                                    <input type="text" class="form-control" placeholder="Father’s Occupation" name="fatheroccupation" id="fatheroccupation">
+                                </div>
+                                <div class="ftxt">
+                                    <label>Mother’s Name</label>
+                                    <input type="text" class="form-control" placeholder="Mother’s Name" name="mothername" id="mothername">
+                                </div>
+                                <div class="ftxt">
+                                    <label>Mother’s Occupation</label>
+                                    <input type="text" class="form-control" placeholder="Mother’s Occupation" name="motheroccupation" id="motheroccupation">
+                                </div>
+                                <div class="ftxt">
+                                    <label>Siblings </label>
+                                    <input type="number" class="form-control" placeholder="Brothers" name="brothers" id="brothers" >
+                                    <input type="number" class="form-control" placeholder="Sisters" name="sisters" id="sisters" >
+                                </div>
+                                <h5>ASTRO  DETAILS</h5>
+                                <div class="ftxt">
+                                    <label>Date of Birth</label>
+                                    <input type="date" class="form-control" placeholder="Date of Birth" name="dob" id="dob" required>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Time of Birth</label>
+                                    <input type="time" class="form-control" placeholder="Time of Birth" name="tob" id="tob" >
+                                </div>
+                                <div class="ftxt">
+                                    <label>Place of Birth</label>
+                                    <input type="Text" class="form-control" placeholder="Place of Birth" name="pob" id="pob" required>
+                                    <input type="radio" id="Manglik" name="manglik" value="Manglik"><span>Manglik</span>
+                                    <input type="radio" id="Non-Manglik" name="manglik" value="Non-Manglik"><span>Non-Manglik</span>
+                                </div>
+                                <h4>Contact Details</h4>
+                                <div class="ftxt">
+                                    <label>Permanent Address</label>
+                                    <textarea id="permanent-address" name="permanent_address" required></textarea>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Currently Living In</label>
+                                    <input type="Text" class="form-control" placeholder="Currently Living In" name="cli" id="cli" required>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Email ID</label>
+                                    <input type="email" class="form-control" placeholder="Email ID" name="email" id="email">            
+                                </div>
+                                <div class="ftxt">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" placeholder="Password" name="password" id="password">
+                                </div>
+                                <div class="ftxt">
+                                    <label>*phone /Mobile Number</label>
+                                    <input type="Text" class="form-control" placeholder="*phone /Mobile Number" name="phone" id="phone" required>
+                                </div>
+
+                                <h4>Additional Comments</h4>
+                                <div class="ftxt">
+                                    <label>Additional Comments</label>  
+                                    <textarea name="additional_comments"></textarea>
+                                </div>
+                                <h4>Partner preferences </h4>
+                                <div class="ftxt">
+                                    <label>Age</label>
+                                    <input type="Number" class="form-control" placeholder="Age" name="p_age" id="p_age">
+                                </div>
+                                <div class="ftxt">
+                                    <label>Height</label>
+                                    <input type="Number" class="form-control" placeholder="Height" name="p_height" id="p_height">
+                                </div>
+                                <div class="ftxt">
+                                    <label>Drink</label>
+                                        <input type="radio" id="dp_yes" name="p_drink" value="dp_yes"><span>Yes</span>
+                                        <input type="radio" id="dp_no" name="p_drink" value="dp_no"><span>No</span>
+                                </div>
+                                <div class="ftxt">
+                                    <label>Mother Tongue</label>
+                                    <select name="p_mothertongue" id="p_mothertongue">
+                                        <option value="">Select Language</option>
+                                    <option value="english">English</option>
+                                    <option value="hindi">Hindi</option>
+                                    <option value="punjabi">Punjabi</option>
+                                    </select>
+                                    <input type="radio" id="p_Manglik" name="p_manglik" value="Manglik"><span>Manglik</span>
+                                    <input type="radio" id="p_Non-Manglik" name="p_manglik" value="Non-Manglik"><span>Non-Manglik</span>
+                                </div>
+                                <div class="ftxt">
+                                <label>Occupation/Profession Details</label>
+        <input type="text" class="form-control" placeholder="Occupation/Profession Details" name="p_occupation" id="p_occupation">
+                                </div>
+                                <div class="ftxt">
+                                <label>Currently Living In</label>
+        <input type="Text" class="form-control" placeholder="Currently Living In" name="p_cli" id="p_cli">
+                                </div>
+                                <div class="ftxt">
+                                <label>Marital Status</label>
+        <select name="p_marital" id="p_marital">
+            <option value="">Marital Status</option>
+        <option value="unmarried">Unmarried</option>
+        <option value="divorcee">Divorcee</option>
+        <option value="widow">Widow</option>
+        </select>
+                                </div>
+                                <div class="ftxt">
+                                <label>Religion</label>
+        <input type="text" class="form-control" placeholder="Religion" name="p_religion" id="p_religion">
+      </li>
+                                </div>
+                                <div class="ftxt">
+                                <label>Caste </label>
+        <input type="text" class="form-control" placeholder="Caste" name="p_caste" id="p_caste">
+                                </div>
+                                <div class="ftxt">
+                                <label>Sub caste</label>
+        <input type="text" class="form-control" placeholder="Sub caste" name="p_sub_caste" id="p_sub_caste">
+                                </div>
+
                                 <?php if (!is_user_logged_in()) { ?>
 
                                     <div class="ftxt">
