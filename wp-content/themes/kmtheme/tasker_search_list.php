@@ -31,8 +31,9 @@ $raitingTable = $wpdb->prefix . "review_raiting";
                             'post_status' => 'publish'
                         );
                         $services_query = new WP_Query($services_args); ?>
+                        adasd
                         <select id="get_service" name="service">
-                            <option value="">Select service</option>
+                            <option value="">Select service232</option>
                             <?php if ($services_query->have_posts()) {
                                 while ($services_query->have_posts()):
                                     global $post;

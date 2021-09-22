@@ -216,7 +216,7 @@ class kmlist
         $res = '';
         $getTags = '';
         global $wpdb;
-        $raitingTable = $wpdb->prefix . "review_raiting";
+       
         $args = array(
             'role' => 'tasker',
             'orderby' => 'user_registered',
@@ -224,7 +224,6 @@ class kmlist
             'number' => 10
         );
         $users = get_users($args);
-        // echo '<ul>';
         if ($users) {
             global $wpdb;
             $i = 1;
@@ -240,43 +239,22 @@ class kmlist
                 $rate = round($avgRate[0]->avg, 1);
                 $first_name = get_user_meta($user->ID, 'first_name', true);
                 $last_name = get_user_meta($user->ID, 'last_name', true);
-                // $image = get_user_meta($user->ID,'author_profile_picture',true);
-                $city = get_user_meta($user->ID, 'billing_city', true);
-
-                // $img_url = get_user_meta($user_id,'author_profile_picture',true);
                 $img_name = km_get_show_user_avatar(array('item_id' => $user->ID, 'html' => false, 'type' => 'small'));
-
-
                 $res .= '<div><div class="user-listing">';
-
-                $res .= '<a href="' . site_url() . '/view-profile/?id=' . $user->ID . '"><img src="' . $img_name . '"></a>';
+                $res .= '<img src="' . $img_name . '">';
                 $res .= '</div><div class="user-details">';
-                $res .= '<a href="' . site_url() . '/view-profile/?id=' . $user->ID . '"><h4>' . ucfirst($first_name) . ' ' . ucfirst($last_name) . '</h4></a>';
-                $res .= '<div class="city">' . $city . '</div>';
-                $res .= '<div class="review-rating"><span class="tasker-rating-' . $i . '"></span>';
-                $res .= '<span class="count-reviews">' . $count . ' reviews </span></div>';
+                $res .= '<h4>' . ucfirst($first_name) . ' ' . ucfirst($last_name) . '</h4>';
                 $res .= '</div></div>';
                 ?>
-                <script>
-                    jQuery(document).ready(function () {
-                        var count = "<?php echo $i ?>";
-                        jQuery(".tasker-rating-" + count).starRating({
-                            initialRating: <?php echo $rate ?>,
-                            readOnly: true,
-                            starSize: 20,
-                            useGradient: false,
-                            strokeWidth: 0,
-                            activeColor: 'gold'
-                        });
-                    });
-
-                </script>
+              
                 <?php $i++;
             }
             $res .= '</div></div>';
-
-            /* $res .= '<div class="text-center"><a class="button button-primary" href="' . site_url() . '/our-services/' . '">Start a New Service</a> <a class="button" href="' . site_url() . '/listing/' . '">See All Taskers</a></div>';*/
-            $res .= '<div class="text-center"><a class="button" href="' . site_url() . '/listing/' . '">See All Taskers</a></div>';
+            if ( is_user_logged_in() ) {
+            $res .= '<div class="text-center"><a class="button" href="' . site_url() . '/listing/' . '">See All Users</a></div>';
+            }else{
+                $res .= '<div class="text-center"><a class="button" href="' . site_url() . '/login/' . '">See All Users</a></div>';
+            }
             ?>
 
             <?php
