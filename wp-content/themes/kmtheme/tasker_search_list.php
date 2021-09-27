@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Tasker search And Listing
+ * Template Name: User search And Listing
  */
 
 get_header();
@@ -31,8 +31,8 @@ $raitingTable = $wpdb->prefix . "review_raiting";
                             'post_status' => 'publish'
                         );
                         $services_query = new WP_Query($services_args); ?>
-                        adasd
-                        <select id="get_service" name="service">
+                       
+                        <?php /* <select id="get_service" name="service">
                             <option value="">Select service232</option>
                             <?php if ($services_query->have_posts()) {
                                 while ($services_query->have_posts()):
@@ -45,7 +45,109 @@ $raitingTable = $wpdb->prefix . "review_raiting";
                                     echo '<option value=' . $slug . '>' . $service_name . '</option>';
                                 endwhile;
                             } ?>
-                        </select>
+                        </select> */ ?>
+
+                        <!--  start  -->
+                         <div class="input-groups">
+            <label>Select Religion</label>
+            <select name="religion" >
+                <option>select</option>
+                <option value="hindu">Hindu</option>
+                <option value="sikh">Sikh</option>
+            </select>
+       </div>
+       <div class="input-groups">
+            <label>Caste</label>
+            <input type="text" name="caste">
+       </div>
+       <div class="input-groups">
+   
+         <label>Education</label>
+        <select name="edu" >
+            <option>select</option>
+            <option value="p_graduation">Post Graduation</option>
+            <option value="graduation">graduation</option>
+        </select>
+     </div>
+     <div class="input-groups">
+         <label>Income</label>
+      <select name="income" >
+        <option>select</option>
+        <option value="1lakh">less 100000</option>
+        <option value="3lakh">less 300000</option>
+        <option value="5lakh">less 500000</option>
+    </select>
+     </div>
+     <div class="input-groups">
+        <label>State</label>
+    <select name="state" id="state" class="form-control">
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+        <option value="Daman and Diu">Daman and Diu</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Lakshadweep">Lakshadweep</option>
+        <option value="Puducherry">Puducherry</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="West Bengal">West Bengal</option>
+    </select>
+     </div>
+     <div class="input-groups">
+        <label>Marital Status</label>
+     <select name="marrital" >
+        <option>select</option>
+        <option value="divoced">Divoced</option>
+        <option value="single">Single</option>
+    </select>
+     </div>
+     <div class="input-groups">
+          <label>Manglik/Non-Manglik</label>
+    <select name="manglik" >
+        <option>select</option>
+        <option value="manglik">Manglik</option>
+        <option value="non-manglik">Non-manglik</option>
+    </select>
+     </div>
+<div class="input-groups">
+        <label>Age From</label>
+    <input type="number" name="age_from" value="<?php echo $_REQUEST['age_from'] ?>">
+     </div>
+    <div class="input-groups">
+         <label>Age To</label>
+    <input type="number" name="age_to" value="'.$_REQUEST['age_to'].'">
+     </div>
+    <div class="col-sm-12 text-center w-100%">
+    <input type="submit" class="" name="search">
+    <input type="reset" class="" name="reset" >
+    </div> 
+                        <!--  end  -->
                         <input type="submit" value="Submit">
                     </form>
                     <span style="display:none;" class="validation-message-service error">
