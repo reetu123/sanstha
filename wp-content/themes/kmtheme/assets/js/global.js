@@ -178,6 +178,35 @@
 	// Fire on document ready.
 	$( document ).ready( function() {
 
+		// Slide slider
+		$('.main-slider .slider').slick({
+			autoplay: true,
+			speed: 800,
+			lazyLoad: 'progressive',
+			arrows: true,
+			dots: false,
+			  prevArrow: '<div class="slick-nav prev-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+			  nextArrow: '<div class="slick-nav next-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+		  }).slickAnimation();
+		  
+		  
+		  
+		  $('.slick-nav').on('click touch', function(e) {
+		  
+			  e.preventDefault();
+		  
+			  var arrow = $(this);
+		  
+			  if(!arrow.hasClass('animate')) {
+				  arrow.addClass('animate');
+				  setTimeout(() => {
+					  arrow.removeClass('animate');
+				  }, 1600);
+			  }
+		  
+		  });
+		// End slider slider
+
 		// If navigation menu is present on page, setNavProps and adjustScrollClass.
 		if ( $navigation.length ) {
 			setNavProps();
