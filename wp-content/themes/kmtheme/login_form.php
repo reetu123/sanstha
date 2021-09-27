@@ -20,7 +20,7 @@ do_action('login_init');
 
 <div class="wrap">
     <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
+        <main id="main" class="site-main login-main" role="main">
             <?php if ((isset($_GET['action']) && $_GET['action'] == 'rp') && isset($_GET['login']) && !empty($_GET['login'])) {
                 ?>
                 <div class="form-d form-reset">
@@ -126,26 +126,19 @@ do_action('login_init');
                                     name="km-login-submit"/>
                                     <input type="hidden" name="km_login_nonce"
                                     value="<?php echo wp_create_nonce('km-login-nonce'); ?>"/>
-                                        <!-- <div class="clear or">Or</div>
-                    <a class="btn btn-info c-blue"
-                       href="<?php echo get_site_url() ?>/login/?loginFacebook=1&redirect=<?php echo get_site_url() ?>"
-                       onclick="window.location = '<?php echo get_site_url() ?>/login/?loginFacebook=1&redirect='+window.location.href; return false;">
-                       <i class="fa fa-facebook"></i> Connect With Facebook </a> -->
                    </div>
                     <div class="ftxt">
-                                        <div class="check">
-                                            <?php /*<input required type="checkbox" name="accept_cond"
-                                            id="accept_cond" <?php echo is_user_logged_in() ? 'checked' : '' ?> > */ ?>
-                                            <label for="accept_cond">By signing in, I
-                                                agree to Wooffy.ca’s
-                                                <a href="<?php echo site_url('/term-and-conditions');
-                                                ?>"> Terms of Use and Privacy
-                                            Policy</a>, and confirm that I am
-                                        18 years of age or older. </label>
-                                    </div>
-                                </div>
-
-
+                        <div class="check">
+                            <?php /*<input required type="checkbox" name="accept_cond"
+                            id="accept_cond" <?php echo is_user_logged_in() ? 'checked' : '' ?> > */ ?>
+                            <label for="accept_cond">By signing in, I
+                                agree to Wooffy.ca’s
+                                <a href="<?php echo site_url('/term-and-conditions');
+                                ?>"> Terms of Use and Privacy
+                            Policy</a>, and confirm that I am
+                        18 years of age or older. </label>
+                    </div>
+                </div>
                </form>
            </div>
        </div>

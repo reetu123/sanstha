@@ -25,6 +25,8 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
     <script type="text/javascript" src="<?php echo bloginfo('template_url') ?>/assets/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+    <script src="https://www.alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
     <script>var admin_ajax = "<?php echo admin_url('admin-ajax.php') ?>" </script>
     <script>var Markerdata = [];</script>
     <style>
