@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: User search And Listing
  */
@@ -19,10 +20,10 @@ $raitingTable = $wpdb->prefix . "review_raiting";
             $urlSlug = $page->post_name;
             if ($urlSlug == 'listing') {
 
-                ?>
+            ?>
                 <!-- start form into listing page -->
-                <div class="form-result list">
-                    <form name="search_service" class="search_services" method="GET" action="<?php echo site_url() . '/search-tasker' ?>">
+                <div class="form-result list filter-result">
+                    <form name="search_service" class="search_services filter-form clearfix" method="GET" action="<?php echo site_url() . '/search-tasker' ?>">
                         <?php
                         $services_args = array(
                             'post_type' => 'km-services',
@@ -31,7 +32,7 @@ $raitingTable = $wpdb->prefix . "review_raiting";
                             'post_status' => 'publish'
                         );
                         $services_query = new WP_Query($services_args); ?>
-                       
+
                         <?php /* <select id="get_service" name="service">
                             <option value="">Select service232</option>
                             <?php if ($services_query->have_posts()) {
@@ -48,111 +49,112 @@ $raitingTable = $wpdb->prefix . "review_raiting";
                         </select> */ ?>
 
                         <!--  start  -->
-                         <div class="input-groups">
-            <label>Select Religion</label>
-            <select name="religion" >
-                <option>select</option>
-                <option value="hindu">Hindu</option>
-                <option value="sikh">Sikh</option>
-            </select>
-       </div>
-       <div class="input-groups">
-            <label>Caste</label>
-            <input type="text" name="caste">
-       </div>
-       <div class="input-groups">
-   
-         <label>Education</label>
-        <select name="edu" >
-            <option>select</option>
-            <option value="p_graduation">Post Graduation</option>
-            <option value="graduation">graduation</option>
-        </select>
-     </div>
-     <div class="input-groups">
-         <label>Income</label>
-      <select name="income" >
-        <option>select</option>
-        <option value="1lakh">less 100000</option>
-        <option value="3lakh">less 300000</option>
-        <option value="5lakh">less 500000</option>
-    </select>
-     </div>
-     <div class="input-groups">
-        <label>State</label>
-    <select name="state" id="state" class="form-control">
-        <option value="Andhra Pradesh">Andhra Pradesh</option>
-        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-        <option value="Assam">Assam</option>
-        <option value="Bihar">Bihar</option>
-        <option value="Chandigarh">Chandigarh</option>
-        <option value="Chhattisgarh">Chhattisgarh</option>
-        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
-        <option value="Daman and Diu">Daman and Diu</option>
-        <option value="Delhi">Delhi</option>
-        <option value="Lakshadweep">Lakshadweep</option>
-        <option value="Puducherry">Puducherry</option>
-        <option value="Goa">Goa</option>
-        <option value="Gujarat">Gujarat</option>
-        <option value="Haryana">Haryana</option>
-        <option value="Himachal Pradesh">Himachal Pradesh</option>
-        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-        <option value="Jharkhand">Jharkhand</option>
-        <option value="Karnataka">Karnataka</option>
-        <option value="Kerala">Kerala</option>
-        <option value="Madhya Pradesh">Madhya Pradesh</option>
-        <option value="Maharashtra">Maharashtra</option>
-        <option value="Manipur">Manipur</option>
-        <option value="Meghalaya">Meghalaya</option>
-        <option value="Mizoram">Mizoram</option>
-        <option value="Nagaland">Nagaland</option>
-        <option value="Odisha">Odisha</option>
-        <option value="Punjab">Punjab</option>
-        <option value="Rajasthan">Rajasthan</option>
-        <option value="Sikkim">Sikkim</option>
-        <option value="Tamil Nadu">Tamil Nadu</option>
-        <option value="Telangana">Telangana</option>
-        <option value="Tripura">Tripura</option>
-        <option value="Uttar Pradesh">Uttar Pradesh</option>
-        <option value="Uttarakhand">Uttarakhand</option>
-        <option value="West Bengal">West Bengal</option>
-    </select>
-     </div>
-     <div class="input-groups">
-        <label>Marital Status</label>
-     <select name="marrital" >
-        <option>select</option>
-        <option value="divoced">Divoced</option>
-        <option value="single">Single</option>
-    </select>
-     </div>
-     <div class="input-groups">
-          <label>Manglik/Non-Manglik</label>
-    <select name="manglik" >
-        <option>select</option>
-        <option value="manglik">Manglik</option>
-        <option value="non-manglik">Non-manglik</option>
-    </select>
-     </div>
-<div class="input-groups">
-        <label>Age From</label>
-    <input type="number" name="age_from" value="<?php echo $_REQUEST['age_from'] ?>">
-     </div>
-    <div class="input-groups">
-         <label>Age To</label>
-    <input type="number" name="age_to" value="'.$_REQUEST['age_to'].'">
-     </div>
-    <div class="col-sm-12 text-center w-100%">
-    <input type="submit" class="" name="search">
-    <input type="reset" class="" name="reset" >
-    </div> 
+                        <div class="ftxt half">
+
+                            <label>Select Religion</label>
+                            <select name="religion">
+                                <option>select</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="sikh">Sikh</option>
+                            </select>
+                            
+                        </div>
+                        <div class="ftxt half">
+                            <label>Caste</label>
+                            <input type="text" name="caste">
+                        </div>
+                        <div class="ftxt half">
+                            <label>Education</label>
+                            <select name="edu">
+                                <option>select</option>
+                                <option value="p_graduation">Post Graduation</option>
+                                <option value="graduation">graduation</option>
+                            </select>
+                        </div>
+                        <div class="ftxt half">
+                            <label>Income</label>
+                            <select name="income">
+                                <option>select</option>
+                                <option value="1lakh">less 100000</option>
+                                <option value="3lakh">less 300000</option>
+                                <option value="5lakh">less 500000</option>
+                            </select>
+                        </div>
+                        <div class="ftxt half">
+                            <label>State</label>
+                            <select name="state" id="state" class="form-control">
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Puducherry">Puducherry</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select>
+                        </div>
+                        <div class="ftxt half">
+                            <label>Marital Status</label>
+                            <select name="marrital">
+                                <option>select</option>
+                                <option value="divoced">Divoced</option>
+                                <option value="single">Single</option>
+                            </select>
+                        </div>
+                        <div class="ftxt">
+                            <label>Manglik/Non-Manglik</label>
+                            <select name="manglik">
+                                <option>select</option>
+                                <option value="manglik">Manglik</option>
+                                <option value="non-manglik">Non-manglik</option>
+                            </select>
+                        </div>
+                        <div class="ftxt half">
+                            <label>Age From</label>
+                            <input type="number" name="age_from" value="<?php echo $_REQUEST['age_from'] ?>">
+                        </div>
+                        <div class="ftxt half">
+                            <label>Age To</label>
+                            <input type="number" name="age_to" value="'.$_REQUEST['age_to'].'">
+                        </div>
+                        <div class="col-sm-12 text-center w-100% btn-wrapper">
+                            <input type="submit" class="" name="search">
+                            <input type="reset" class="" name="reset">
+                        </div>
                         <!--  end  -->
-                        <input type="submit" value="Submit">
+                        <!-- <input type="submit" value="Submit"> -->
                     </form>
                     <span style="display:none;" class="validation-message-service error">
-                            Please select service first
-                        </span>
+                        Please select service first
+                    </span>
                 </div>
                 <!-- end form into listing page -->
             <?php } else if ($urlSlug == 'search-tasker') { ?>
@@ -166,101 +168,99 @@ $raitingTable = $wpdb->prefix . "review_raiting";
                     <form name="search_service" class="search_locations" method="GET" action="<?php echo site_url() . '/search-tasker' ?>">
                         <label>Your Location</label>
                         <input type="hidden" name="service" value="<?php echo $service_id ?>">
-                        <input type="text" required name="location" id="search_location" value=""
-                        placeholder="Search Location">
+                        <input type="text" required name="location" id="search_location" value="" placeholder="Search Location">
                         <input type="hidden" name="latitude" class="form-control" id="arealatitude" value="">
                         <input type="hidden" name="longitude" class="form-control" id="arealongitude" value="">
                         <input type="hidden" name="city" class="form-control" id="areacity" value="">
-                            <!-- <input type="hidden" name="state" class ="form-control" id="areastate" value="">
+                        <!-- <input type="hidden" name="state" class ="form-control" id="areastate" value="">
                             <input type="hidden" name="country" class ="form-control" id="areacountry" value="">
                             <input type="hidden" name="pincode" class ="form-control" id="areapincode" value=""> -->
-                            <input type="submit" name="areaSearchSub" class= "areaSearchSub" id="areaSearchSub" value="Submit">
-                        </form>
-                        <span style="display:none;" class="validation-message error">
-                            Please enter a valid address
-                        </span>
-                    </div>
-                    <!-- end form into searching page -->
+                        <input type="submit" name="areaSearchSub" class="areaSearchSub" id="areaSearchSub" value="Submit">
+                    </form>
+                    <span style="display:none;" class="validation-message error">
+                        Please enter a valid address
+                    </span>
+                </div>
+                <!-- end form into searching page -->
                 <?php }
-                $args = array();
-                if ($urlSlug == 'listing' && @$_GET['service'] == '' && @$_GET['location'] == '') {
-                    /*start pagination section*/
-                     $number = get_option('posts_per_page'); //max display per page
-                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; //current number of page
-                     $offset = ($paged - 1) * $number; //page offset
-                     $users = get_users(array('role' => 'tasker'));
-                     /* end pagination secton */
-                     $args = array(
-                       'offset' => $offset,
-                       'number' => $number,
-                       'role' => 'tasker',
-                       'orderby' => 'user_registered',
-                       'order' => 'ASC'
-                   );
-                     $query = get_users($args);
-                     $total_users = count($users);
-                     $total_query = count($query);
-                     $total_pages = ($total_users / $number);
-                     $total_pages = is_float($total_pages) ? intval($total_users / $number) + 1 : intval($total_users / $number);
+            $args = array();
+            if ($urlSlug == 'listing' && @$_GET['service'] == '' && @$_GET['location'] == '') {
+                /*start pagination section*/
+                $number = get_option('posts_per_page'); //max display per page
+                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; //current number of page
+                $offset = ($paged - 1) * $number; //page offset
+                $users = get_users(array('role' => 'tasker'));
+                /* end pagination secton */
+                $args = array(
+                    'offset' => $offset,
+                    'number' => $number,
+                    'role' => 'tasker',
+                    'orderby' => 'user_registered',
+                    'order' => 'ASC'
+                );
+                $query = get_users($args);
+                $total_users = count($users);
+                $total_query = count($query);
+                $total_pages = ($total_users / $number);
+                $total_pages = is_float($total_pages) ? intval($total_users / $number) + 1 : intval($total_users / $number);
 
-                     if(is_array($query )):
+                if (is_array($query)) :
+                ?>
+                    <div class="users-main-section">
+                        <?php
+                        foreach ($query as $user) :
+                            $first_name = get_user_meta($user->ID, 'first_name', true);
+                            $last_name = get_user_meta($user->ID, 'last_name', true);
+                            // $image = get_user_meta($user->ID,'author_profile_picture',true);
+                            $about_services = get_user_meta($user->ID, 'about_services', true);
+                            $record = "SELECT * from " . $raitingTable . " where tasker_id = " . $user->ID . " ORDER BY ID DESC LIMIT 1";
+                            $records = $wpdb->get_results($record);
+
+                            if (strlen($about_services) > 199) {
+                                $about = substr($about_services, 0, 200) . '...' . '<a href="' . site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user->ID . '">Read More</a>';
+                            } else {
+                                $about = $about_services;
+                            }
+
+
+                            // $img_url = get_user_meta($user_id,'author_profile_picture',true);
+                            $imgName = km_get_show_user_avatar(array('item_id' => $user->ID, 'html' => false, 'type' => 'medium'));
+
+
+                            // }
                         ?>
-                        <div class="users-main-section">
-                            <?php
-                            foreach ($query as $user):
-                                $first_name = get_user_meta($user->ID, 'first_name', true);
-                                $last_name = get_user_meta($user->ID, 'last_name', true);
-                                // $image = get_user_meta($user->ID,'author_profile_picture',true);
-                                $about_services = get_user_meta($user->ID, 'about_services', true);
-                                $record = "SELECT * from " . $raitingTable . " where tasker_id = " . $user->ID . " ORDER BY ID DESC LIMIT 1";
-                                $records = $wpdb->get_results($record);
-
-                                if (strlen($about_services) > 199) {
-                                    $about = substr($about_services, 0, 200) . '...' . '<a href="' . site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user->ID . '">Read More</a>';
-                                } else {
-                                    $about = $about_services;
-                                }
-
-
-                                // $img_url = get_user_meta($user_id,'author_profile_picture',true);
-                                $imgName = km_get_show_user_avatar(array('item_id' => $user->ID, 'html' => false, 'type' => 'medium'));
-
-
-                                // }
-                                ?>
-                                <div class="users-main-wrap">
-                                    <div class="user-listing">
-                                        <div class="user-avatar">
-                                            <?php
-                                            if ($imgName) {
-                                                ?>
-                                                <a href="<?php echo site_url() . '/view-profile/?id=' . $user->ID ?>">
-                                                    <?php
-                                                    echo '<img src="' . $imgName . '">';
-                                                    ?>
-                                                </a>
+                            <div class="users-main-wrap">
+                                <div class="user-listing">
+                                    <div class="user-avatar">
+                                        <?php
+                                        if ($imgName) {
+                                        ?>
+                                            <a href="<?php echo site_url() . '/view-profile/?id=' . $user->ID ?>">
                                                 <?php
-                                            }
-                                            ?>
+                                                echo '<img src="' . $imgName . '">';
+                                                ?>
+                                            </a>
+                                        <?php
+                                        }
+                                        ?>
+                                    </div>
+                                    <a href="<?php echo site_url() . '/view-profile/?id=' . $user->ID ?>" class="button">View Profile</a>
+                                </div>
+                                <div class="user-details">
+                                    <div class="user-inner-head">
+                                        <div class="name-sec">
+                                            <h4><?php echo ucfirst($first_name) . ' ' . ucfirst($last_name) ?></h4>
+                                            <div class="rating-wrap"></div>
                                         </div>
-                                        <a href="<?php echo site_url() . '/view-profile/?id=' . $user->ID ?>"
-                                         class="button">View Profile</a>
-                                     </div>
-                                     <div class="user-details">
-                                        <div class="user-inner-head">
-                                            <div class="name-sec">
-                                                <h4><?php echo ucfirst($first_name) . ' ' . ucfirst($last_name) ?></h4>
-                                                <div class="rating-wrap"></div>
-                                            </div>
-                                        </div>
-                                        <div class="user-inner-body">
-                                            <?php if (!empty($about_services)){ ?>
-                                                <h5>About My Services</h5>
-                                                <p class="desc">
-                                                    <?php echo $about;
-                                                } else {
-                                                    echo "";
-                                                } ?>
+                                    </div>
+                                    <div class="user-inner-body">
+                                        <?php if (!empty($about_services)) { ?>
+                                            <h5>About My Services</h5>
+                                            <p class="desc">
+                                            <?php echo $about;
+                                        } else {
+                                            echo "";
+                                        } ?>
                                             </p>
                                             <div class="review-sec">
                                                 <?php if (@$records[0]->review_description) {
@@ -277,290 +277,285 @@ $raitingTable = $wpdb->prefix . "review_raiting";
                                                     }
 
                                                     echo '<p>' . $review . '</p>';
-
                                                 } ?>
 
                                             </div>
-                                        </div>
                                     </div>
                                 </div>
-                            <?php endforeach; ?>
-
-                            <?php  if ($total_users > $total_query) {
-                                echo '<div id="support-pagination" class="clearfix pagination">';
-                                $current_page = max(1, get_query_var('paged'));
-                                echo paginate_links(array(
-                                    'base' => get_pagenum_link(1) . '%_%',
-                                    'format' => 'page/%#%/',
-                                    'current' => $current_page,
-                                    'total' => $total_pages,
-                                    'prev_next' => true
-                                ));
-                                echo '</div>'; 
-                            } ?>
-                        </div>
-                    <?php endif;
-                } else if ($urlSlug == 'search-tasker' && @$_GET['service'] != '' && @$_GET['location'] == '') {
-                    $service_slug = $_GET['service'];
-                    $queried = get_page_by_path($service_slug, OBJECT, 'km-services');
-                    $service_id = $queried->ID;
-                    /*start here*/
-
-
-                    $posts_per_page = get_option('posts_per_page');
-                    $page = isset( $_GET['cpage'] ) ? abs( (int) $_GET['cpage'] ) : 1;
-                    $offset = ($page - 1) * $posts_per_page;
-
-                    $sql = "SELECT  DISTINCT service.user_id,service.price FROM " . $detailTable . " as service
-                    INNER JOIN " . $userstable . " as u ON service.user_id =u.id where service.service_id =" . $service_id . " AND service.price > 0 LIMIT ".$offset.", ".$posts_per_page;
-                    $data_sql = $wpdb->get_results($sql);
-                    $countRec = "select  COUNT(DISTINCT service.user_id) as count from " . $detailTable . " as service INNER JOIN " . $userstable . " as u ON service.user_id =u.id where service_id =" . $service_id . "  AND service.price > 0";
-
-                    $recSql = $wpdb->get_results($countRec);
-                    $count = $recSql[0]->count; ?>
-                    <div class="result-found-wrap">
-                        <label>Search Results for "<?php echo @$queried->post_title ?>"</label>
-                        <p class="results-text"><?php echo $count; ?> Result Found</p>
-                    </div>
-                    <?php if ($count == 0) { ?>
-                        <div class="res">
-                            <p>Oops! No Record Found. </p>
-                        </div>
-                    <?php } ?>
-
-                    <div class="users-main-section">
-                        <?php foreach ($data_sql as $k => $v) {
-                            $user_id = $v->user_id;
-                            if ($user_id != '') {
-                                $record = "SELECT * from " . $raitingTable . " where tasker_id = " . $user_id . " ORDER BY ID DESC LIMIT 1 ";
-                                $records = $wpdb->get_results($record);
-                                $first_name = get_user_meta($user_id, 'first_name', true);
-                                $last_name = get_user_meta($user_id, 'last_name', true);
-                                $about_services = get_user_meta($user_id, 'about_services', true);
-                                // $image = get_user_meta($user_id,'author_profile_picture',true);
-                                $price = $v->price;
-
-                                if (!empty($about_services)) {
-                                    if (strlen($about_services) > 99) {
-                                        $about = substr($about_services, 0, 100) . '...' . '<a href="' . site_url() . '/view-profile/?service=' . $_GET['service'] . '&id='.$user_id.'">Read More</a>';
-                                    } else {
-                                        $about = $about_services;
-                                    }
-                                }
-
-
-                                $imgName = km_get_show_user_avatar(array('item_id' => $user_id, 'html' => false, 'type' => 'medium'));
-
-
-                                ?>
-
-                                <div class="users-main-wrap">
-                                    <div class="user-listing">
-                                        <div class="user-avatar">
-                                            <?php if ($imgName) {
-                                                ?>
-                                                <a href="<?php echo site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id ?>"
-                                                    >
-                                                    <?php
-                                                    echo '<img src="' . $imgName . '">';
-                                                    ?>
-                                                </a>
-                                                <?php
-                                            } ?>
-                                        </div>
-                                        <a href="<?php echo site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id ?>"
-                                         class="button">View Profile</a>
-                                     </div>
-                                     <div class="user-details">
-                                        <div class="user-inner-head">
-                                            <div class="name-sec">
-                                                <h4><?php echo ucfirst($first_name) . ' ' . ucfirst($last_name) ?></h4>
-                                                <div class="rating-wrap"></div>
-                                            </div>
-                                            <div class="price-sec">
-                                                <span>From</span>
-                                                <label><?php echo "<sup>$</sup>" . @$price; ?></label>
-                                                <span>per hour</span>
-                                            </div>
-                                        </div>
-                                        <div class="user-inner-body">
-                                            <?php if (!empty($about_services)) { ?>
-                                                <h5>About My Services</h5>
-                                                <p class="desc"><?php echo $about ?></p>
-                                            <?php } ?>
-                                            <div class="review-sec">
-                                                <?php if (@$records[0]->review_description) {
-
-                                                    $imgName = km_get_show_user_avatar(array('item_id' => $records[0]->user_id, 'html' => false, 'type' => 'thumb'));
-
-                                                    echo '<img src="' . $imgName . '">';
-
-
-                                                    if (strlen($records[0]->review_description) > 99) {
-                                                        $review = substr($records[0]->review_description, 0, 100) . '...<a href="' . site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id . '">Read More' . '</a>';
-                                                    } else {
-                                                        $review = $records[0]->review_description;
-                                                    }
-
-                                                    echo '<p>' . $review . '</p>';
-                                                } ?>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <?php
-                            }
-                        } 
-                        echo '<div id="support-pagination" class="clearfix pagination">';
-                        echo paginate_links( array(
-                            'base' => add_query_arg( 'cpage', '%#%' ),
-                            'format' => '',
-                            'prev_next' => true,
-                            'total' => ceil($count / $posts_per_page),
-                            'current' => $page
-                        )); 
-                        echo '</div>';?>
-                    </div>
-                    <?php
-                } else if ($urlSlug == 'search-tasker' && @$_GET['service'] != '' && @$_GET['location'] != '') {
-                    $city = $_GET['city'];
-                    $service_slug = $_GET['service'];
-                    $queried = get_page_by_path($service_slug, OBJECT, 'km-services');
-                    $service_id = $queried->ID;
-
-                    $posts_per_page = get_option('posts_per_page');
-                    $page = isset( $_GET['lpage'] ) ? abs( (int) $_GET['lpage'] ) : 1;
-                    $offset = ($page - 1) * $posts_per_page;
-
-
-                    $loc = "SELECT DISTINCT l.user_id, u.id, d.user_id,d.price FROM wp_users u LEFT JOIN " . $locationsTable . " l ON l.user_id = u.id LEFT JOIN " . $detailTable . " d ON d.user_id = u.id WHERE d.user_id IS NOT NULL AND l.user_id IS NOT NULL AND l.city ='" . $_GET['city'] . "' AND d.price > 0 LIMIT ".$offset.", ".$posts_per_page;
-
-                    $countRec = "select  COUNT(DISTINCT l.user_id, u.id, d.user_id) as count FROM " . $userstable . " u LEFT JOIN " . $locationsTable . " l ON l.user_id = u.id LEFT JOIN " . $detailTable . " d ON d.user_id = u.id WHERE d.user_id IS NOT NULL AND l.user_id IS NOT NULL AND l.city ='" . $_GET['city'] . "' AND d.price > 0";
-                    $recSql = $wpdb->get_results($countRec);
-                    $count = $recSql[0]->count;
-                    $locations_sql = $wpdb->get_results($loc);
-                    $uniqueLoc = uniqueAssocArray($locations_sql, 'id');
-                    $countRec = count($uniqueLoc);
-                    ?>
-                    <div class="result-found-wrap">
-                        <label>Search Results for '<?php echo $queried->post_title ?>' in
-                            '<?php echo $_GET['location'] ?>' </label>
-                            <p class="results-text"> <?php echo $countRec ?> Result Found</p>
-                        </div>
-                        <?php if ($countRec == 0) { ?>
-                            <div class="res">
-                                <p>Oops! No Record Found. </p>
                             </div>
-                        <?php } ?>
-                        <div class="users-main-section">
-                            <?php foreach ($uniqueLoc as $k => $v) {
-                                if ($v->user_id != '') {
-                                    $user_id = $v->user_id;
-                                    $record = "SELECT * from " . $raitingTable . " where tasker_id = " . $user_id . " ORDER BY ID DESC LIMIT 1 ";
-                                    $records = $wpdb->get_results($record);
-                                    $price = $v->price;
-                                    $first_name = get_user_meta($user_id, 'first_name', true);
-                                    $last_name = get_user_meta($user_id, 'last_name', true);
-                                    $about_services = get_user_meta($user_id, 'about_services', true);
-                                    $image = get_user_meta($user_id, 'author_profile_picture', true);
-                                    $price = $v->price;
-                                    $about = substr($about_services, 0, 200) . '...' . '<a href="' . site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id  . '">Read More</a>';
-                                // $dirName = dirname(__FILE__).'/../../uploads/profilepics/'.$user_id.'/medium/';
-                                // $imageName = scandir($dirName,1);
-                                // $imgName = $imageName[0];
+                        <?php endforeach; ?>
 
-                                    $imgName = km_get_show_user_avatar(array('item_id' => $user_id, 'html' => false, 'type' => 'medium'));
+                        <?php if ($total_users > $total_query) {
+                            echo '<div id="support-pagination" class="clearfix pagination">';
+                            $current_page = max(1, get_query_var('paged'));
+                            echo paginate_links(array(
+                                'base' => get_pagenum_link(1) . '%_%',
+                                'format' => 'page/%#%/',
+                                'current' => $current_page,
+                                'total' => $total_pages,
+                                'prev_next' => true
+                            ));
+                            echo '</div>';
+                        } ?>
+                    </div>
+                <?php endif;
+            } else if ($urlSlug == 'search-tasker' && @$_GET['service'] != '' && @$_GET['location'] == '') {
+                $service_slug = $_GET['service'];
+                $queried = get_page_by_path($service_slug, OBJECT, 'km-services');
+                $service_id = $queried->ID;
+                /*start here*/
 
-                                // echo '<img src="'.$imgName.'">';
 
-                                    if (!empty($about_services)) {
-                                        if (strlen($about_services) > 199) {
-                                            $about = substr($about_services, 0, 200) . '...' . '<a href="' . site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id .'">Read More</a>';
-                                        } else {
-                                            $about = $about_services;
-                                        }
-                                    }
-                                    ?>
+                $posts_per_page = get_option('posts_per_page');
+                $page = isset($_GET['cpage']) ? abs((int) $_GET['cpage']) : 1;
+                $offset = ($page - 1) * $posts_per_page;
 
-                                    <div class="users-main-wrap">
-                                        <div class="user-listing">
-                                        <!-- <img src="<?php // echo $image
-                                        ?>"> -->
-                                        <div class="user-avatar">
-                                            <?php if ($imgName) {
+                $sql = "SELECT  DISTINCT service.user_id,service.price FROM " . $detailTable . " as service
+                    INNER JOIN " . $userstable . " as u ON service.user_id =u.id where service.service_id =" . $service_id . " AND service.price > 0 LIMIT " . $offset . ", " . $posts_per_page;
+                $data_sql = $wpdb->get_results($sql);
+                $countRec = "select  COUNT(DISTINCT service.user_id) as count from " . $detailTable . " as service INNER JOIN " . $userstable . " as u ON service.user_id =u.id where service_id =" . $service_id . "  AND service.price > 0";
+
+                $recSql = $wpdb->get_results($countRec);
+                $count = $recSql[0]->count; ?>
+                <div class="result-found-wrap">
+                    <label>Search Results for "<?php echo @$queried->post_title ?>"</label>
+                    <p class="results-text"><?php echo $count; ?> Result Found</p>
+                </div>
+                <?php if ($count == 0) { ?>
+                    <div class="res">
+                        <p>Oops! No Record Found. </p>
+                    </div>
+                <?php } ?>
+
+                <div class="users-main-section">
+                    <?php foreach ($data_sql as $k => $v) {
+                        $user_id = $v->user_id;
+                        if ($user_id != '') {
+                            $record = "SELECT * from " . $raitingTable . " where tasker_id = " . $user_id . " ORDER BY ID DESC LIMIT 1 ";
+                            $records = $wpdb->get_results($record);
+                            $first_name = get_user_meta($user_id, 'first_name', true);
+                            $last_name = get_user_meta($user_id, 'last_name', true);
+                            $about_services = get_user_meta($user_id, 'about_services', true);
+                            // $image = get_user_meta($user_id,'author_profile_picture',true);
+                            $price = $v->price;
+
+                            if (!empty($about_services)) {
+                                if (strlen($about_services) > 99) {
+                                    $about = substr($about_services, 0, 100) . '...' . '<a href="' . site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id . '">Read More</a>';
+                                } else {
+                                    $about = $about_services;
+                                }
+                            }
+
+
+                            $imgName = km_get_show_user_avatar(array('item_id' => $user_id, 'html' => false, 'type' => 'medium'));
+
+
+                    ?>
+
+                            <div class="users-main-wrap">
+                                <div class="user-listing">
+                                    <div class="user-avatar">
+                                        <?php if ($imgName) {
+                                        ?>
+                                            <a href="<?php echo site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id ?>">
+                                                <?php
+                                                echo '<img src="' . $imgName . '">';
                                                 ?>
-                                                <a href="<?php echo site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id ?>"
-                                                 class="">
-                                                 <?php
-                                                 echo '<img src="' . $imgName . '">';
-                                                 ?>
-                                             </a>
-                                             <?php
-                                         } ?>
-                                     </div>
-                                     <a href="<?php echo site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id ?>"
-                                         class="button">View Profile</a>
-                                     </div>
-                                     <div class="user-details">
-                                        <div class="user-inner-head">
-                                            <div class="name-sec">
-                                                <h4><?php echo ucfirst($first_name) . ' ' . ucfirst($last_name) ?></h4>
-                                                <div class="rating-wrap"></div>
-                                            </div>
-                                            <div class="price-sec">
-                                                <span>From</span>
-                                                <label><?php echo "$" . $price; ?></label>
-                                                <span>per hour</span>
-                                            </div>
+                                            </a>
+                                        <?php
+                                        } ?>
+                                    </div>
+                                    <a href="<?php echo site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id ?>" class="button">View Profile</a>
+                                </div>
+                                <div class="user-details">
+                                    <div class="user-inner-head">
+                                        <div class="name-sec">
+                                            <h4><?php echo ucfirst($first_name) . ' ' . ucfirst($last_name) ?></h4>
+                                            <div class="rating-wrap"></div>
                                         </div>
-                                        <div class="user-inner-body">
-                                            <?php if (@$about_services) { ?>
-                                                <h5>About My Services</h5>
-                                                <p class="desc"><?php echo $about ?></p>
-                                            <?php } ?>
-                                            <div class="review-sec">
-                                                <?php if (@$records[0]->review_description) {
-
-                                                    $imgName = km_get_show_user_avatar(array('item_id' => $records[0]->user_id, 'html' => false, 'type' => 'thumb'));
-
-                                                    echo '<img src="' . $imgName . '">';
-
-
-                                                    if (strlen($records[0]->review_description > 199)) {
-                                                        $review = substr($records[0]->review_description, 0, 200) . '...<a href="' . site_url() . '/view-profile/?id=' . $user->ID . '">Read More' . '</a>';
-                                                    } else {
-                                                        $review = $records[0]->review_description;
-                                                    }
-
-                                                    echo '<p>' . $review . '</p>';
-                                                } ?>
-
-                                            </div>
+                                        <div class="price-sec">
+                                            <span>From</span>
+                                            <label><?php echo "<sup>$</sup>" . @$price; ?></label>
+                                            <span>per hour</span>
                                         </div>
                                     </div>
+                                    <div class="user-inner-body">
+                                        <?php if (!empty($about_services)) { ?>
+                                            <h5>About My Services</h5>
+                                            <p class="desc"><?php echo $about ?></p>
+                                        <?php } ?>
+                                        <div class="review-sec">
+                                            <?php if (@$records[0]->review_description) {
 
+                                                $imgName = km_get_show_user_avatar(array('item_id' => $records[0]->user_id, 'html' => false, 'type' => 'thumb'));
+
+                                                echo '<img src="' . $imgName . '">';
+
+
+                                                if (strlen($records[0]->review_description) > 99) {
+                                                    $review = substr($records[0]->review_description, 0, 100) . '...<a href="' . site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id . '">Read More' . '</a>';
+                                                } else {
+                                                    $review = $records[0]->review_description;
+                                                }
+
+                                                echo '<p>' . $review . '</p>';
+                                            } ?>
+
+                                        </div>
+                                    </div>
                                 </div>
-                            <?php }
-                        } 
-                        ?>
-                        <?php 
-                        echo '<div id="support-pagination" class="clearfix pagination">';
-                        echo paginate_links( array(
-                            'base' => add_query_arg( 'lpage', '%#%' ),
-                            'format' => '',
-                            'prev_next' => true,
-                            'total' => ceil($count / $posts_per_page),
-                            'current' => $page
-                        ));
-                        echo '</div>'; 
-                        ?>
-                    </div>
+                            </div>
                     <?php
-                } ?>
-            </main><!-- #main -->
-        </div>
-    </div><!-- .wrap -->
-    <?php
+                        }
+                    }
+                    echo '<div id="support-pagination" class="clearfix pagination">';
+                    echo paginate_links(array(
+                        'base' => add_query_arg('cpage', '%#%'),
+                        'format' => '',
+                        'prev_next' => true,
+                        'total' => ceil($count / $posts_per_page),
+                        'current' => $page
+                    ));
+                    echo '</div>'; ?>
+                </div>
+            <?php
+            } else if ($urlSlug == 'search-tasker' && @$_GET['service'] != '' && @$_GET['location'] != '') {
+                $city = $_GET['city'];
+                $service_slug = $_GET['service'];
+                $queried = get_page_by_path($service_slug, OBJECT, 'km-services');
+                $service_id = $queried->ID;
 
-    get_footer(); ?>
+                $posts_per_page = get_option('posts_per_page');
+                $page = isset($_GET['lpage']) ? abs((int) $_GET['lpage']) : 1;
+                $offset = ($page - 1) * $posts_per_page;
+
+
+                $loc = "SELECT DISTINCT l.user_id, u.id, d.user_id,d.price FROM wp_users u LEFT JOIN " . $locationsTable . " l ON l.user_id = u.id LEFT JOIN " . $detailTable . " d ON d.user_id = u.id WHERE d.user_id IS NOT NULL AND l.user_id IS NOT NULL AND l.city ='" . $_GET['city'] . "' AND d.price > 0 LIMIT " . $offset . ", " . $posts_per_page;
+
+                $countRec = "select  COUNT(DISTINCT l.user_id, u.id, d.user_id) as count FROM " . $userstable . " u LEFT JOIN " . $locationsTable . " l ON l.user_id = u.id LEFT JOIN " . $detailTable . " d ON d.user_id = u.id WHERE d.user_id IS NOT NULL AND l.user_id IS NOT NULL AND l.city ='" . $_GET['city'] . "' AND d.price > 0";
+                $recSql = $wpdb->get_results($countRec);
+                $count = $recSql[0]->count;
+                $locations_sql = $wpdb->get_results($loc);
+                $uniqueLoc = uniqueAssocArray($locations_sql, 'id');
+                $countRec = count($uniqueLoc);
+            ?>
+                <div class="result-found-wrap">
+                    <label>Search Results for '<?php echo $queried->post_title ?>' in
+                        '<?php echo $_GET['location'] ?>' </label>
+                    <p class="results-text"> <?php echo $countRec ?> Result Found</p>
+                </div>
+                <?php if ($countRec == 0) { ?>
+                    <div class="res">
+                        <p>Oops! No Record Found. </p>
+                    </div>
+                <?php } ?>
+                <div class="users-main-section">
+                    <?php foreach ($uniqueLoc as $k => $v) {
+                        if ($v->user_id != '') {
+                            $user_id = $v->user_id;
+                            $record = "SELECT * from " . $raitingTable . " where tasker_id = " . $user_id . " ORDER BY ID DESC LIMIT 1 ";
+                            $records = $wpdb->get_results($record);
+                            $price = $v->price;
+                            $first_name = get_user_meta($user_id, 'first_name', true);
+                            $last_name = get_user_meta($user_id, 'last_name', true);
+                            $about_services = get_user_meta($user_id, 'about_services', true);
+                            $image = get_user_meta($user_id, 'author_profile_picture', true);
+                            $price = $v->price;
+                            $about = substr($about_services, 0, 200) . '...' . '<a href="' . site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id  . '">Read More</a>';
+                            // $dirName = dirname(__FILE__).'/../../uploads/profilepics/'.$user_id.'/medium/';
+                            // $imageName = scandir($dirName,1);
+                            // $imgName = $imageName[0];
+
+                            $imgName = km_get_show_user_avatar(array('item_id' => $user_id, 'html' => false, 'type' => 'medium'));
+
+                            // echo '<img src="'.$imgName.'">';
+
+                            if (!empty($about_services)) {
+                                if (strlen($about_services) > 199) {
+                                    $about = substr($about_services, 0, 200) . '...' . '<a href="' . site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id . '">Read More</a>';
+                                } else {
+                                    $about = $about_services;
+                                }
+                            }
+                    ?>
+
+                            <div class="users-main-wrap">
+                                <div class="user-listing">
+                                    <!-- <img src="<?php // echo $image
+                                                    ?>"> -->
+                                    <div class="user-avatar">
+                                        <?php if ($imgName) {
+                                        ?>
+                                            <a href="<?php echo site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id ?>" class="">
+                                                <?php
+                                                echo '<img src="' . $imgName . '">';
+                                                ?>
+                                            </a>
+                                        <?php
+                                        } ?>
+                                    </div>
+                                    <a href="<?php echo site_url() . '/view-profile/?service=' . $_GET['service'] . '&id=' . $user_id ?>" class="button">View Profile</a>
+                                </div>
+                                <div class="user-details">
+                                    <div class="user-inner-head">
+                                        <div class="name-sec">
+                                            <h4><?php echo ucfirst($first_name) . ' ' . ucfirst($last_name) ?></h4>
+                                            <div class="rating-wrap"></div>
+                                        </div>
+                                        <div class="price-sec">
+                                            <span>From</span>
+                                            <label><?php echo "$" . $price; ?></label>
+                                            <span>per hour</span>
+                                        </div>
+                                    </div>
+                                    <div class="user-inner-body">
+                                        <?php if (@$about_services) { ?>
+                                            <h5>About My Services</h5>
+                                            <p class="desc"><?php echo $about ?></p>
+                                        <?php } ?>
+                                        <div class="review-sec">
+                                            <?php if (@$records[0]->review_description) {
+
+                                                $imgName = km_get_show_user_avatar(array('item_id' => $records[0]->user_id, 'html' => false, 'type' => 'thumb'));
+
+                                                echo '<img src="' . $imgName . '">';
+
+
+                                                if (strlen($records[0]->review_description > 199)) {
+                                                    $review = substr($records[0]->review_description, 0, 200) . '...<a href="' . site_url() . '/view-profile/?id=' . $user->ID . '">Read More' . '</a>';
+                                                } else {
+                                                    $review = $records[0]->review_description;
+                                                }
+
+                                                echo '<p>' . $review . '</p>';
+                                            } ?>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    <?php }
+                    }
+                    ?>
+                    <?php
+                    echo '<div id="support-pagination" class="clearfix pagination">';
+                    echo paginate_links(array(
+                        'base' => add_query_arg('lpage', '%#%'),
+                        'format' => '',
+                        'prev_next' => true,
+                        'total' => ceil($count / $posts_per_page),
+                        'current' => $page
+                    ));
+                    echo '</div>';
+                    ?>
+                </div>
+            <?php
+            } ?>
+        </main><!-- #main -->
+    </div>
+</div><!-- .wrap -->
+<?php
+
+get_footer(); ?>

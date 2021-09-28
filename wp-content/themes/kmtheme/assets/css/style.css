@@ -1086,7 +1086,8 @@ input[type="checkbox"] + label {
 }
 button,
 input[type="button"],
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
   background-color: #fa4a70;
   border: 0;
   -webkit-border-radius: 2px;
@@ -4850,7 +4851,8 @@ body:not(.kmtheme-front-page) .entry-header {
   }
 }
 input[type="button"],
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
   background-color: #fa4a70;
   color: #ffffff;
   font-weight: 400;
@@ -6281,6 +6283,52 @@ div[id*="ajaxsearchliteres"].wpdreams_asl_results .results div.asl_image {
 }
 .testimonial-wrap .customtestimonial .grid_item .item_content .item_title {
   color: #000;
+}
+.filter-form label {
+  text-align: left;
+  font-size: 16px !important;
+}
+.filter-form .ftxt {
+  padding: 0 5px 10px;
+}
+.filter-form .ftxt input,
+.filter-form .ftxt select,
+.filter-form .ftxt textarea {
+  width: 100% !important;
+}
+.filter-form .ftxt input[type=number] {
+  height: 52px;
+  -webkit-border-radius: 4px;
+}
+.filter-form .ftxt.half {
+  width: 50%;
+  float: left;
+}
+@media (max-width: 767px) {
+  .filter-form .ftxt.half {
+    width: 100%;
+    float: none;
+  }
+}
+.btn-wrapper {
+  clear: both;
+  margin-top: 15px;
+}
+.btn-wrapper input {
+  margin: 0 5px;
+}
+@media (min-width: 767px) {
+  .btn-wrapper {
+    margin-top: 125px;
+  }
+}
+input[type="reset"] {
+  height: 52px;
+}
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
 }
 .error404 .page-content {
   padding-bottom: 4em;
