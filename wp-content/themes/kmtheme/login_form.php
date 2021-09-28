@@ -63,6 +63,14 @@ do_action('login_init');
 
 
             } else if (!is_user_logged_in()) {
+             
+
+                if(@$_GET['sanstha_id'] == ""){ 
+                    
+                    echo do_shortcode("[services]");
+              }else{
+
+               wp_login_form();
                 ?>
                 <div class="login-wrap">
                     <div class="login-form-inner">
@@ -132,7 +140,7 @@ do_action('login_init');
                             <?php /*<input required type="checkbox" name="accept_cond"
                             id="accept_cond" <?php echo is_user_logged_in() ? 'checked' : '' ?> > */ ?>
                             <label for="accept_cond">By signing in, I
-                                agree to Wooffy.ca’s
+                                agree to site’s
                                 <a href="<?php echo site_url('/term-and-conditions');
                                 ?>"> Terms of Use and Privacy
                             Policy</a>, and confirm that I am
@@ -147,18 +155,17 @@ do_action('login_init');
     <?php if (is_active_sidebar('become-a-member')): ?>
         <aside id="secondary" class="widget-area" role="complementary"
         aria-label="<?php esc_attr_e('Home Sidebar', 'twentyseventeen'); ?>">
-        <?php htmlspecialchars(dynamic_sidebar('become-a-member')); ?>
+       <p> By creating an account with our sanstha, you will be able to move through list users,get connected with them by using phone number and emails.</p>
+
+<a class="button" href="<?php echo site_url().'/create-an-account/?sanstha_id='.@$_GET['sanstha_id'] ?>">Create an Account</a>
+
+        <?php // htmlspecialchars(dynamic_sidebar('become-a-member')); ?>
     </aside><!-- #secondary -->
-<?php endif;
-/* if (is_active_sidebar('become-a-tasker')) : ?>
-    <aside id="secondary" class="widget-area" role="complementary"
-    aria-label="<?php esc_attr_e('Blog Sidebar', 'twentyseventeen'); ?>">
-    <?php dynamic_sidebar('become-a-tasker'); ?>
-</aside><!-- #secondary -->
-<?php endif;*/  ?>
+<?php endif; ?>
+
 </div>
 <?php
-} ?>
+} } ?>
 
 
 </main><!-- #main -->

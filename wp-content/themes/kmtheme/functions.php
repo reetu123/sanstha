@@ -2019,3 +2019,16 @@ function cyb_get_avatar( $avatar = '', $id_or_email, $size = 96, $default = '', 
   $avatar = "<img alt='$alt' src='".$imgName."' class='avatar avatar-{$size} photo' height='{$size}' width='{$size}' />";
   return $avatar;
 }
+
+
+
+
+/* start extra  */
+add_action('login_form_middle','my_added_login_field');
+function my_added_login_field(){
+?>
+    <p>
+        <input type="hidden" tabindex="20" size="20" class="input" id="sanstha_id" name="sanstha_id" value="<?php echo @$_GET['sanstha_id'] ?>"></label>
+    </p>
+<?php
+}
