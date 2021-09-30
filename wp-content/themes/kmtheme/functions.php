@@ -2024,11 +2024,41 @@ function cyb_get_avatar( $avatar = '', $id_or_email, $size = 96, $default = '', 
 
 
 /* start extra  */
-add_action('login_form_middle','my_added_login_field');
+
+
+
+
+add_filter('login_form_middle','my_added_login_field');
 function my_added_login_field(){
-?>
-    <p>
-        <input type="hidden" tabindex="20" size="20" class="input" id="sanstha_id" name="sanstha_id" value="<?php echo @$_GET['sanstha_id'] ?>"></label>
-    </p>
-<?php
+    //Output your HTML
+    $additional_field = '<div class="login-custom-field-wrapper"">
+     
+        <input type="hidden" tabindex="20" size="20" class="input" id="sanstha_id" name="sanstha_id" value="'.@$_GET['sanstha_id'].'"></label>
+    </div>';
+
+    return $additional_field;
 }
+
+
+
+add_filter('wp_authenticate_user','wp_verify_sanstha',10,2);
+function wp_verify_sanstha(){
+    // echo "<pre>";print_r($_POST);
+    // echo "</pre>";die;
+    $sanstha_id = get_user_meta( $user->ID, 'sanstha_id' );
+    // echo "<pre>";print_r(get_userdata($user->ID)); echo "</pre>"; die;
+    if(!is_admin()){
+
+   
+    if ( 1 == (int) $sanstha_id ) {
+        wp_redirect(site_url().'/listing/?sansth_id=1');
+   }else if(2 == (int) $sanstha_id){
+        wp_redirect(site_url().'/listing/?sansth_id=2');
+    }else{
+            $message = esc_html__( 'User not verified.', 'text-domain');
+            return new WP_Error( 'user_not_verified', $message );
+    }
+}
+    return $user;
+}
+

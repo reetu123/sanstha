@@ -69,8 +69,14 @@ do_action('login_init');
                     
                     echo do_shortcode("[services]");
               }else{
-
-               wp_login_form();
+                $args = array(
+                    'echo'            => true,
+                    'redirect'        => 'https://www.canadianhumantraffickinghotline.ca/fr/referral-directory/',
+                    'remember'        => true,
+                    'value_remember'  => true,
+                  );
+                 
+               wp_login_form($args);
                 ?>
                 <div class="login-wrap">
                     <div class="login-form-inner">
