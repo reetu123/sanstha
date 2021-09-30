@@ -118,6 +118,28 @@
   ]
 });
 		</script>
+
+		<script>
+			/* faq slider start */
+// Accordion
+jQuery(document).ready(function($){
+	
+$(document).on('click','.according-title', function(){
+    if($(this).parent('.according-inner').hasClass('open')){
+        $(this).parent('.according-inner').removeClass('open');
+        $(this).parent('.according-inner').find('.according-content').slideUp();
+    }else{
+        $(this).parent('.according-inner').addClass('open');
+        $(this).parent('.according-inner').find('.according-content').slideDown();
+    }
+    $(this).parent('.according-inner').siblings().removeClass('open');
+    $(this).parent('.according-inner').siblings().find('.according-content').slideUp();
+});
+
+})
+/* faq slider end*/
+
+			</script>
 		<?php 	get_template_part( 'template-parts/footer/site', 'info' ); ?>
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->

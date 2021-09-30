@@ -45,7 +45,7 @@ class kmlist
             <div class="col-md-6">
                 <div class="click-card-wrapper">
                     <div class="click-card">
-                    <a class="sanstha-anchor" href="/login.php?sanstha_id=1">Aggrawal Jaipur Sanstha </a>
+                    <a class="sanstha-anchor" href="<?php echo site_url().'/login/?sanstha_id=1' ?>">Aggrawal Jaipur Sanstha </a>
                     </div>
                     <div class="click-card-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Contemnit enim disserendi elegantiam, confuse loquitur. Ergo id est convenienter naturae vivere, a natura discedere. Quid igitur dubitamus in tota eius natura quaerere quid sit effectum? Quae cum essent dicta, discessimus.</p>
@@ -55,7 +55,7 @@ class kmlist
             <div class="col-md-6">
             <div class="click-card-wrapper">
                     <div class="click-card">
-                    <a class="sanstha-anchor" href="/login.php?sanstha_id=2">Varvadhu Milaan Sanstha </a>
+                    <a class="sanstha-anchor" href="<?php echo site_url().'/login/?sanstha_id=2' ?>">Varvadhu Milaan Sanstha </a>
                     </div>
                     <div class="click-card-content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Contemnit enim disserendi elegantiam, confuse loquitur. Ergo id est convenienter naturae vivere, a natura discedere. Quid igitur dubitamus in tota eius natura quaerere quid sit effectum? Quae cum essent dicta, discessimus.</p>
